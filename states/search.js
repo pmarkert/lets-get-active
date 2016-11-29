@@ -79,7 +79,7 @@ module.exports = {
         "ClearDate": function() {
 		delete this.attributes.start_date;
 		log(`Cleared start_date`);
-		this.emit("LocationNeeded");
+		this.emitWithState("DoSearch");
 	},
         "LocationNeeded": function() {
 		log("Prompting the user for a location");
