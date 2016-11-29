@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "SSML",
+      "ssml": "<speak> No problem. Just remember that an active lifestyle keeps you happy and healthy. </speak>"
+    },
+    "shouldEndSession": true
+  },
+  "sessionAttributes": {
+    "STATE": "_search"
+  }
+}
