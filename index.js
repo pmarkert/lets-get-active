@@ -13,6 +13,10 @@ exports.handler = (event, context) => {
 			this.handler.state = states.SEARCH;
 			this.emitWithState("LaunchRequest");
 		},
+		'SessionEndedRequest': function () {
+			console.log('session ended!');
+			this.emit(':saveState', true); // Be sure to call :saveState to persist your session attributes in DynamoDB
+		},
 		"Unhandled": function() {
 			if(this.event.request.intent) {
 				this.handler.state = states.SEARCH;

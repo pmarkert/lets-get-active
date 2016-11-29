@@ -3,7 +3,7 @@
     "response": {
       "outputSpeech": {
 	"type": "SSML",
-	"ssml": "<speak> I found 70 events within 20 miles of Marietta ga. Would you like to hear about them? </speak>"
+	"ssml": "<speak> OK, I found 70 events within 20 miles of Marietta ga. Would you like to hear about them? </speak>"
       },
       "shouldEndSession": false
     },

@@ -53,7 +53,7 @@ module.exports = {
 					this.handler.state = states.GOTO_LIST;
 					this.attributes.results = transform_results(result);
 					this.attributes.total_results = result.total_results;
-					return this.emit(":ask", xmlescape(`I found ${total_results} events within ${this.attributes.distance} miles of ${this.attributes.location}. Would you like to hear about them?`));
+					return this.emit(":ask", xmlescape(`OK, I found ${total_results} events within ${this.attributes.distance} miles of ${this.attributes.location}. Would you like to hear about them?`));
 				}
 			})
 			.catch(function(err) {
@@ -67,12 +67,25 @@ module.exports = {
 	},
 	"SetDate": function() {
 		try {
-			this.attributes.start_date = moment(this.event.request.intent.slots.date.value, "YYYY-MM-DDTH").format("YYYY-MM-DD"); 
+			var date_candidate = this.event.request.intent.slots.date.value;
+			if(date_candidate.indexOf("T")>=0) {
+				date_candidate = date_candidate.substr(0, date_candidate.indexOf("T"));
+			}
+			this.attributes.start_date = moment(date_candidate).format("YYYY-MM-DD"); 
+			if(this.attributes.start_date=="Invalid date") {
+				throw new Error("Invalid date");
+			}
 			log(`Set start_date to ${this.attributes.start_date}`);
-			this.emitWithState("LocationNeeded");
+			if(this.attributes.location) {
+				this.emitWithState("DoSearch");
+			}
+			else {
+				this.emitWithState("LocationNeeded");
+			}
 		}
 		catch(err) {
-			log("Error trying to set the date to " + this.attributes.start_date);
+			delete this.attributes.start_date;
+			log("Error trying to set the date to " + this.event.request.intent.slots.date.value);
 			this.emit(":ask", "I think you are trying to tell me the date for which you want me to search, but I didn't quite understand the date that you said. When would you like for me to search for events?");
 		}
 	},
@@ -86,7 +99,6 @@ module.exports = {
 		this.emit(":ask", "Sure, I'll be happy to help you find events but first, I need to know where you want me to search. Please tell me the name of any US city, state, or zipcode.");
 	},
 	"SetLocationAndClearDate": function() {
-debugger;
 		delete this.attributes.start_date;
 		log("Cleared the date, about to set the location");
 		this.emitWithState("SetLocation");

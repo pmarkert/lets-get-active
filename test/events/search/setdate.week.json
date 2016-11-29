@@ -6,7 +6,7 @@
       },
       "attributes": {
          "STATE": "_search",
-	 "location": "Marietta ga"
+         "location": "Marietta ga"
       },
       "user": {
 	"userId": "amzn1.ask.account.AEFA43R4B5D5IBTWORJGXPHFOOXETWHT7LB2VWN7ZLXRU72LWEHH4Y3NGEB4ADJR2TSFPJHXQUTHS5W4IHOGXN3PGBVMRW2QG2YOU6FBVJKIWT4TJBJ4G5BYT636V7EJO42OC4RKLYPDWUCGBBZG4WOBZM226T24HPBYMUS3YJHLAEG6FRXIICV2YMYKDFIUJVTD6KDWDWZJKIY"
@@ -23,7 +23,7 @@
 	"slots": {
 	  "date": {
 	    "name": "date",
-	    "value": "2016-11-28T"
+	    "value": "2016-W48"
 	  }
 	}
       }
