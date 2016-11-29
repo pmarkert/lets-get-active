@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "SSML",
+      "ssml": "<speak> OK, no problem. What date or location would you like for me to search? </speak>"
+    },
+    "shouldEndSession": false
+  },
+  "sessionAttributes": {
+    "distance": "20",
+    "location": "Las Vegas Nevada",
+    "STATE": "_search",
+    "start_date": "2016-11-28",
+    "total_results": 21
+  }
+}

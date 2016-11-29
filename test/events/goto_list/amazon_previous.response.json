@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "SSML",
+      "ssml": "<speak> I&amp;apos;m not sure what you meant. I&amp;apos;ve done a search for events within undefined miles of undefined on or after Invalid date and found undefined. To hear about them, you can say Yes otherwise, You can also tell me a different location date to search. </speak>"
+    },
+    "shouldEndSession": false
+  },
+  "sessionAttributes": {
+    "STATE": "_goto_list"
+  }
+}
