@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "SSML",
+      "ssml": "<speak> Session ended. </speak>"
+    },
+    "shouldEndSession": true
+  },
+  "sessionAttributes": {
+    "STATE": "_search",
+    "location": "Marietta ga",
+    "start_date": "2016-11-27"
+  }
+}

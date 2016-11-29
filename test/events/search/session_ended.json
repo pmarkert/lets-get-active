@@ -1,0 +1,40 @@
+{
+    "version": "1.0",
+    "session": {
+        "new": false,
+        "sessionId": "amzn1.echo-api.session.edd1bc91-98b5-4372-907e-f27b13dab34c",
+        "application": {
+            "applicationId": "amzn1.ask.skill.9200600c-ea41-4400-adbe-beb6efef00b1"
+        },
+	"attributes": {
+	   "STATE": "_search",
+	   "location": "Marietta ga",
+	   "start_date": "2016-11-27"
+	},
+        "user": {
+            "userId": "amzn1.ask.account.AHNET5KM3HAY5NTGCBWNIRPZLIRKFVQXT46QX3B7DCHCX45AX7MQ4SVNDCMKZFJ3VD6ZXXVXTH4MX7XWNBFYNIYT6HGDMDYFAZSGN4RKVB3SQIHDU7ZLTNBUZKJ4HHYHFHQ63DQTCCDJWX6J54YGK3HQHR53L5DGPPVG5BKYLNMCEPIQ6CP2GUHGCDP2AR3DKRTCSFAZWEEKI7A"
+        }
+    },
+    "context": {
+        "System": {
+            "application": {
+                "applicationId": "amzn1.ask.skill.9200600c-ea41-4400-adbe-beb6efef00b1"
+            },
+            "user": {
+                "userId": "amzn1.ask.account.AHNET5KM3HAY5NTGCBWNIRPZLIRKFVQXT46QX3B7DCHCX45AX7MQ4SVNDCMKZFJ3VD6ZXXVXTH4MX7XWNBFYNIYT6HGDMDYFAZSGN4RKVB3SQIHDU7ZLTNBUZKJ4HHYHFHQ63DQTCCDJWX6J54YGK3HQHR53L5DGPPVG5BKYLNMCEPIQ6CP2GUHGCDP2AR3DKRTCSFAZWEEKI7A"
+            },
+            "device": {
+                "supportedInterfaces": {
+                    "AudioPlayer": {}
+                }
+            }
+        }
+    },
+    "request": {
+        "type": "SessionEndedRequest",
+        "requestId": "amzn1.echo-api.request.1f059dc6-7c6f-46d7-bbb9-c31220ace3b2",
+        "timestamp": "2016-11-29T22:39:35Z",
+        "locale": "en-US",
+        "reason": "EXCEEDED_MAX_REPROMPTS"
+    }
+}

@@ -25,8 +25,18 @@ module.exports = {
 	'AMAZON.HelpIntent': function() {
 		this.emit(':ask', xmlescape(`To hear about the events I've found, you can say Yes otherwise, You can also give me a different location or date to search.`));
 	},
+	'SessionEndedRequest': function () {
+		delete this.attributes.results;
+		this.handler.state = states.SEARCH;
+		if(process.env.DYANMO_TABLE) {
+			this.emit(':saveState', true); // Be sure to call :saveState to persist your session attributes in DynamoDB
+		}
+		else {
+			this.emit(":tell", "Session ended.");
+		}
+	},
 	'Unhandled': function() {
-		if(["LaunchRequest", "ClearDate", "SetDate", "SetLocation", "SetLocationAndClearDate", "AMAZON.StopIntent", "AMAZON.CancelIntent"].indexOf(this.event.request.intent.name)>=0) {
+		if(this.event.request.intent && ["LaunchRequest", "ClearDate", "SetDate", "SetLocation", "SetLocationAndClearDate", "AMAZON.StopIntent", "AMAZON.CancelIntent"].indexOf(this.event.request.intent.name)>=0) {
 			delete this.attributes.results;
 			this.handler.state = states.SEARCH;
 			log(`Clearing search results and passing back to SEARCH.${this.event.request.intent.name}`);

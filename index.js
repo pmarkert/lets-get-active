@@ -11,11 +11,16 @@ exports.handler = (event, context) => {
 	alexa.registerHandlers({ 
 		"LaunchRequest": function() {
 			this.handler.state = states.SEARCH;
+			delete this.attributes.start_date;
 			this.emitWithState("LaunchRequest");
 		},
 		'SessionEndedRequest': function () {
-			console.log('session ended!');
-			this.emit(':saveState', true); // Be sure to call :saveState to persist your session attributes in DynamoDB
+			if(process.env.DYANMO_TABLE) {
+				this.emit(':saveState', true); // Be sure to call :saveState to persist your session attributes in DynamoDB
+			}
+			else {
+				this.emit(":tell", "Session ended.");
+			}
 		},
 		"Unhandled": function() {
 			if(this.event.request.intent) {

@@ -5,11 +5,6 @@ const xmlescape = require("xml-escape");
 const states = require("../states");
 
 module.exports = {
-	'LaunchRequest': function () {
-		delete this.handler.state;
-		delete this.attributes.results;
-		this.emitWithState('DoSearch'); 
-	},
 	'ItemSummary': function() {
 		const race = this.attributes.results[this.attributes.index];
 		const output = `${race.name} is on ${race.date.readable} at ${race.location}`;
@@ -59,6 +54,16 @@ module.exports = {
 	},
 	'AMAZON.StopIntent': function () {
 		this.emit(':tell', "No problem. Just remember that an active lifestyle keeps you happy and healthy.");
+	},
+	'SessionEndedRequest': function () {
+		this.handler.state = states.SEARCH;
+		delete this.attributes.results;
+		if(process.env.DYANMO_TABLE) {
+			this.emit(':saveState', true); // Be sure to call :saveState to persist your session attributes in DynamoDB
+		}
+		else {
+			this.emit(":tell", "Session ended.");
+		}
 	},
 	'Unhandled': function() {
 		this.emit(':ask', "I'm sorry, I'm not sure what you meant. You can ask me to repeat the summary, go to the next item, go to the previous item, start over, or start over");

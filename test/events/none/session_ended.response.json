@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "SSML",
+      "ssml": "<speak> Session ended. </speak>"
+    },
+    "shouldEndSession": true
+  },
+  "sessionAttributes": {}
+}

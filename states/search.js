@@ -20,8 +20,9 @@ function transform_results(result) {
 
 module.exports = {
 	'LaunchRequest': function () {
+		delete this.attributes.start_date;
 		if(this.attributes.location) {
-			return this.emit("DoSearch");
+			return this.emitWithState("DoSearch");
 		}
 		return this.emit(":ask", "Let’s get active! I'll help you find some local races and activities. Let’s start with a location. In what city would you like me to search?", "You can give me any US city, state, or zipcode.");
 	},
@@ -117,6 +118,15 @@ module.exports = {
 	},
 	'AMAZON.StopIntent': function () {
 		this.emit(':tell', "No problem. Just remember that an active lifestyle keeps you happy and healthy.");
+	},
+	'SessionEndedRequest': function () {
+		delete this.attributes.results;
+		if(process.env.DYANMO_TABLE) {
+			this.emit(':saveState', true); // Be sure to call :saveState to persist your session attributes in DynamoDB
+		}
+		else {
+			this.emit(":tell", "Session ended.");
+		}
 	},
 	'Unhandled': function() {
 		this.emit(':ask', "I'm sorry, I'm not sure what you meant. When or where would you like for me to search for events?");
