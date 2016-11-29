@@ -1,0 +1,86 @@
+{
+  "intents": [
+    {
+      "intent": "SetLocationAndClearDate",
+      "slots": [
+        {
+          "name": "location",
+          "type": "AMAZON.US_CITY"
+        },
+        { 
+          "name": "activity_type",
+          "type": "ACTIVITY_TYPE"
+        }      
+      ]
+    },
+    {
+      "intent": "SetDate",
+      "slots": [
+        {
+          "name": "date",
+          "type": "AMAZON.DATE"
+        },
+        { 
+          "name": "activity_type",
+          "type": "ACTIVITY_TYPE"
+        }      
+      ]
+    },
+    {
+      "intent": "ClearDate",
+      "slots": [
+        { 
+          "name": "activity_type",
+          "type": "ACTIVITY_TYPE"
+        }      
+      ]
+    },
+    {
+      "intent": "ItemSummary",
+      "slots": [
+      ]
+    },
+    {
+      "intent": "ItemDetail",
+      "slots": [
+      ]
+    },
+    {
+      "intent": "SetLocation",
+      "slots": [
+        {
+          "name": "location",
+          "type": "AMAZON.US_CITY"
+        },
+        { 
+          "name": "activity_type",
+          "type": "ACTIVITY_TYPE"
+        }      
+      ]
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.YesIntent"
+    },
+    {
+      "intent": "AMAZON.NoIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.PreviousIntent"
+    },
+    {
+      "intent": "AMAZON.NextIntent"
+    },
+    {
+      "intent": "AMAZON.StartOverIntent"
+    },
+    {
+      "intent": "AMAZON.RepeatIntent"
+    }
+  ]
+}
