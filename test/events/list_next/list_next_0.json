@@ -1,15 +1,14 @@
-{ 
+{
     "version": "1.0",
     "session": {
 	"new": false,
-	"sessionId": "amzn1.echo-api.session.1a33ed81-bb2f-4e74-86d3-6d54fc5b9757",
+	"sessionId": "amzn1.echo-api.session.90143660-8eb7-4891-9f86-8af6a9ba13ae",
 	"application": {
 	    "applicationId": "amzn1.ask.skill.16b95a1c-36c3-4602-ab41-092825a9515d"
 	},
 	"attributes": {
 	    "distance": "20",
-	    "location": "Las Vegas Nevada",
-	    "STATE": "_goto_list_",
+	    "STATE": "_list",
 	    "results": [
 	      {
 		"name": "Dashing Through The Square 5K Walk/Run",
@@ -92,6 +91,9 @@
 		}
 	      }
 	    ],
+	    "index": 0,
+	    "location": "Las Vegas Nevada",
+	    "state": "_goto_list_",
 	    "start_date": "2016-11-29",
 	    "total_results": 21
 	},
@@ -119,11 +121,11 @@
     },
     "request": {
 	"type": "IntentRequest",
-	"requestId": "amzn1.echo-api.request.d1bb3806-6252-4cee-9d9b-e5d39c876882",
-	"timestamp": "2016-11-29T02:36:16Z",
+	"requestId": "amzn1.echo-api.request.141702b1-5b37-4324-855d-dc22ecb150d7",
+	"timestamp": "2016-11-29T03:18:37Z",
 	"locale": "en-US",
 	"intent": {
-	    "name": "AMAZON.YesIntent"
+	    "name": "AMAZON.NextIntent"
 	}
     }
 }

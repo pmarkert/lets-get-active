@@ -3,7 +3,7 @@
   "response": {
     "outputSpeech": {
       "type": "SSML",
-      "ssml": "<speak> Marietta Mardi Gras 5K, 1K &amp; Tot Trot is on Friday February 10th at Glover Park - Marietta Square </speak>"
+      "ssml": "<speak> Sleighbells on the Square 5k/1k/Tot Trot 2016 is on Friday December 9th at Downtown Marietta Square </speak>"
     },
     "shouldEndSession": false,
     "reprompt": {
@@ -15,7 +15,7 @@
   },
   "sessionAttributes": {
     "distance": "20",
-    "STATE": "_list_",
+    "STATE": "_list",
     "results": [
       {
         "name": "Dashing Through The Square 5K Walk/Run",
@@ -98,7 +98,7 @@
         }
       }
     ],
-    "index": 1,
+    "index": 2,
     "location": "Las Vegas Nevada",
     "state": "_goto_list_",
     "start_date": "2016-11-29",

@@ -8,7 +8,7 @@
 	},
 	"attributes": {
 	    "distance": "20",
-	    "STATE": "_list_",
+	    "STATE": "_list",
 	    "results": [
 	      {
 		"name": "Dashing Through The Square 5K Walk/Run",
@@ -91,7 +91,7 @@
 		}
 	      }
 	    ],
-	    "index": 0,
+	    "index": 1,
 	    "location": "Las Vegas Nevada",
 	    "state": "_goto_list_",
 	    "start_date": "2016-11-29",
@@ -125,7 +125,7 @@
 	"timestamp": "2016-11-29T03:18:37Z",
 	"locale": "en-US",
 	"intent": {
-	    "name": "AMAZON.NextIntent"
+	    "name": "AMAZON.PreviousIntent"
 	}
     }
 }

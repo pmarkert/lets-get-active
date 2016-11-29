@@ -1,5 +1,5 @@
 module.exports = { 
-	NONE: "",
-	GOTO_LIST: "_goto_list_",
-	LIST: "_list_"
+	SEARCH: "_search",
+	GOTO_LIST: "_goto_list",
+	LIST: "_list"
 };

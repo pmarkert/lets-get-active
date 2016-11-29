@@ -8,7 +8,7 @@
         },
         "attributes": {
             "distance": "20",
-            "STATE": "_list_",
+            "STATE": "_list",
             "index": 1,
             "location": "Las Vegas Nevada",
             "state": "_goto_list_",

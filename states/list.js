@@ -1,6 +1,7 @@
 const moment = require("moment");
 const request = require("request-promise");
-const log = require("../log");
+const log = require("../log")(__filename);
+const xmlescape = require("xml-escape");
 
 module.exports = {
 	'LaunchRequest': function () {
@@ -17,7 +18,7 @@ module.exports = {
 	'ItemDetail': function() {
 		const race = this.attributes.results[this.attributes.index];
 		const output = `${race.name} is on ${race.date.readable} at ${race.location}`;
-		this.emit(":ask", `More information about ${race_name} is not available yet.`);
+		this.emit(":ask", xmlescape(`More information about ${race_name} is not available yet.`));
 	},
 	'AMAZON.RepeatIntent': function() {
 		this.emitWithState('ItemSummary');
@@ -46,10 +47,10 @@ module.exports = {
 		}
 	},
 	'AMAZON.HelpIntent': function () {
-		this.emit(':ask', "You can ask me to repeat the summary, go to the next item, go to the previous item, start over, or start over");
+		this.emit(':ask', "You can ask me to repeat the summary, go to the next item, go to the previous item, or start over");
 	},
 	'AMAZON.StartOverIntent': function() {
-		delete this.handler.state;
+		this.handler.state = states.SEARCH;
 		this.emitWithState("DoSearch");
 	},
 	'AMAZON.CancelIntent': function () {
