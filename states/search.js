@@ -54,7 +54,7 @@ module.exports = {
 					this.handler.state = states.GOTO_LIST;
 					this.attributes.results = transform_results(result);
 					this.attributes.total_results = result.total_results;
-					return this.emit(":ask", xmlescape(`OK, I found ${total_results} events within ${this.attributes.distance} miles of ${this.attributes.location}. Would you like to hear about them?`));
+					return this.emit(":ask", xmlescape(`OK, I found ${total_results} events within ${this.attributes.distance} miles of ${this.attributes.location} starting on or after ${start_date.format("dddd MMMM Do")}. Would you like to hear about them?`));
 				}
 			})
 			.catch(function(err) {
