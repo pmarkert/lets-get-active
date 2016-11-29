@@ -13,7 +13,8 @@ module.exports = {
 					callback(require(`./responses/${filename}.json`));
 				}
 				catch (err) {
-					throw new Error(`Could not load mock-response ./test/responses/${filename}.json for url - ${url}`);
+					console.log(err);
+					throw new Error(`Could not load mock-response ./responses/${filename}.json for url - ${url}`);
 				}
 				return { catch: function() { } };
 			}

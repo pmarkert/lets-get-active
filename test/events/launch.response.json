@@ -1,0 +1,17 @@
+{
+    "version": "1.0",
+    "response": {
+      "outputSpeech": {
+	"type": "SSML",
+	"ssml": "<speak> Let’s get active! I'll help you find some local races and activities. Let’s start with a location. In what city would you like me to search? </speak>"
+      },
+      "shouldEndSession": false,
+      "reprompt": {
+	"outputSpeech": {
+	  "type": "SSML",
+	  "ssml": "<speak> You can give me any US city, state, or zipcode. </speak>"
+	}
+      }
+    },
+    "sessionAttributes": {}
+}

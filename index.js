@@ -11,8 +11,10 @@ var states_list = require("./states/list");
 exports.handler = (event, context) => {
 	log(JSON.stringify(event, null, 2));
 	const alexa = Alexa.handler(event, context);
-	alexa.appId = "amzn1.ask.skill.9200600c-ea41-4400-adbe-beb6efef00b1";
+	alexa.appId = process.env.APP_ID; 
 	alexa.registerHandlers(Alexa.CreateStateHandler(states.NONE, states_none));
+	alexa.registerHandlers(Alexa.CreateStateHandler(states.GOTO_LIST, states_goto_list));
+	alexa.registerHandlers(Alexa.CreateStateHandler(states.LIST, states_list));
 	alexa.dynamoDBTableName = process.env.DYNAMO_TABLE;
 	alexa.execute();
 };

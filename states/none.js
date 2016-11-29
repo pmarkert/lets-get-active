@@ -1,13 +1,13 @@
 const moment = require("moment");
-const request = TEST_MODE ? require("../test/rp_mock") : require("request-promise");
+const request = global.TEST_MODE ? require("../test/rp_mock") : require("request-promise");
 const states = require("../states");
 const log = require("../log");
 
 function transform_results(result) {
 	const results = [];
 	for (var i=0; i<result.results.length; i++) {
-		const race = result.results[i];
-		const race_date = moment(new Date(race.activityRecurrences[0].activityStartDate));
+		var race = result.results[i];
+		var race_date = moment(new Date(race.activityRecurrences[0].activityStartDate));
 		results.push({ 
 			name : race.assetName, 
 			location : race.place.placeName, 
@@ -43,7 +43,7 @@ module.exports = {
 		}
 
 		if(!this.attributes.start_date) { // Default search for today
-			this.attributes.start_date = TEST_MODE ? "2016-11-28" : moment().format("YYYY-MM-DD");
+			this.attributes.start_date = global.TEST_MODE ? "2016-11-28" : moment().format("YYYY-MM-DD");
 		}
 
 		const location_formatted = encodeURIComponent(this.attributes.location);
@@ -62,10 +62,10 @@ module.exports = {
 					return this.emit(":ask", `I'm sorry, I didn't find any results within ${this.attributes.distance} miles of ${this.attributes.location} starting on or after ${start_date.format("dddd MMMM Do")}. When or where else would you like for me to search?`);
 				}
 				else {
-					this.attributes.state = states.GOTO_LIST;
+					this.handler.state = states.GOTO_LIST;
 					this.attributes.results = transform_results(result);
 					this.attributes.total_results = result.total_results;
-					return this.emitWithState(":ask", `I found ${total_results} events within ${this.attributes.distance} miles of ${this.attributes.location}. Would you like to hear about them?`);
+					return this.emit(":ask", `I found ${total_results} events within ${this.attributes.distance} miles of ${this.attributes.location}. Would you like to hear about them?`);
 				}
 			})
 			.catch(function(err) {

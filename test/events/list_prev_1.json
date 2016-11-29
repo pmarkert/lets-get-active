@@ -1,0 +1,131 @@
+{
+    "version": "1.0",
+    "session": {
+	"new": false,
+	"sessionId": "amzn1.echo-api.session.90143660-8eb7-4891-9f86-8af6a9ba13ae",
+	"application": {
+	    "applicationId": "amzn1.ask.skill.16b95a1c-36c3-4602-ab41-092825a9515d"
+	},
+	"attributes": {
+	    "distance": "20",
+	    "STATE": "_list_",
+	    "results": [
+	      {
+		"name": "Dashing Through The Square 5K Walk/Run",
+		"location": "Marietta Square",
+		"date": {
+		  "value": "2016-12-02",
+		  "readable": "Friday December 2nd"
+		}
+	      },
+	      {
+		"name": "Marietta Mardi Gras 5K, 1K & Tot Trot",
+		"location": "Glover Park - Marietta Square",
+		"date": {
+		  "value": "2017-02-10",
+		  "readable": "Friday February 10th"
+		}
+	      },
+	      {
+		"name": "Sleighbells on the Square 5k/1k/Tot Trot 2016",
+		"location": "Downtown Marietta Square",
+		"date": {
+		  "value": "2016-12-09",
+		  "readable": "Friday December 9th"
+		}
+	      },
+	      {
+		"name": "Wonderful Days of Winter 5K/1 Mile",
+		"location": "St James Episcopal Church",
+		"date": {
+		  "value": "2017-01-06",
+		  "readable": "Friday January 6th"
+		}
+	      },
+	      {
+		"name": "Miles 4 Major 5K",
+		"location": "Maple Avenue Methodist Church",
+		"date": {
+		  "value": "2017-03-24",
+		  "readable": "Friday March 24th"
+		}
+	      },
+	      {
+		"name": "Run the Lights of Life 5K/1K Presented by Life University",
+		"location": "Life University",
+		"date": {
+		  "value": "2016-12-02",
+		  "readable": "Friday December 2nd"
+		}
+	      },
+	      {
+		"name": "Chasing Moonlight / Racing Sunlight, the 5K in Paradise!",
+		"location": "Town Center Mall",
+		"date": {
+		  "value": "2017-03-11",
+		  "readable": "Saturday March 11th"
+		}
+	      },
+	      {
+		"name": "The Locomotive Half Marathon / 5K (Presented by First Watch)",
+		"location": "Barrett Summit",
+		"date": {
+		  "value": "2016-12-10",
+		  "readable": "Saturday December 10th"
+		}
+	      },
+	      {
+		"name": "Be the Change 5k",
+		"location": "Kennesaw United Methodist Church",
+		"date": {
+		  "value": "2017-03-03",
+		  "readable": "Friday March 3rd"
+		}
+	      },
+	      {
+		"name": "Spring Bloom 5k",
+		"location": "Lovinggood Middle School",
+		"date": {
+		  "value": "2017-03-24",
+		  "readable": "Friday March 24th"
+		}
+	      }
+	    ],
+	    "index": 1,
+	    "location": "Las Vegas Nevada",
+	    "state": "_goto_list_",
+	    "start_date": "2016-11-29",
+	    "total_results": 21
+	},
+	"user": {
+	    "userId": "amzn1.ask.account.AHNET5KM3HAY5NTGCBWNIRPZLIRKFVQXT46QX3B7DCHCX45AX7MQ4SVNDCMKZFJ3VD6ZXXVXTH4MX7XWNBFYNIYT6HGDMDYFAZSGN4RKVB3SQIHDU7ZLTNBUZKJ4HHYHFHQ63DQTCCDJWX6J54YGK3HQHR53L5DGPPVG5BKYLNMCEPIQ6CP2GUHGCDP2AR3DKRTCSFAZWEEKI7A"
+	}
+    },
+    "context": {
+	"AudioPlayer": {
+	    "playerActivity": "IDLE"
+	},
+	"System": {
+	    "application": {
+		"applicationId": "amzn1.ask.skill.16b95a1c-36c3-4602-ab41-092825a9515d"
+	    },
+	    "user": {
+		"userId": "amzn1.ask.account.AHNET5KM3HAY5NTGCBWNIRPZLIRKFVQXT46QX3B7DCHCX45AX7MQ4SVNDCMKZFJ3VD6ZXXVXTH4MX7XWNBFYNIYT6HGDMDYFAZSGN4RKVB3SQIHDU7ZLTNBUZKJ4HHYHFHQ63DQTCCDJWX6J54YGK3HQHR53L5DGPPVG5BKYLNMCEPIQ6CP2GUHGCDP2AR3DKRTCSFAZWEEKI7A"
+	    },
+	    "device": {
+		"supportedInterfaces": {
+		    "AudioPlayer": {}
+		}
+	    }
+	}
+    },
+    "request": {
+	"type": "IntentRequest",
+	"requestId": "amzn1.echo-api.request.141702b1-5b37-4324-855d-dc22ecb150d7",
+	"timestamp": "2016-11-29T03:18:37Z",
+	"locale": "en-US",
+	"intent": {
+	    "name": "AMAZON.PreviousIntent"
+	}
+    }
+}
