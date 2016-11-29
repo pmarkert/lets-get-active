@@ -97,7 +97,7 @@ module.exports = {
 		this.emit('AMAZON.StopIntent');
 	},
 	'AMAZON.StopIntent': function () {
-		this.emit(':tell', "No problem. Just remember that an active lifestyle keeps you happy and healthy.");
+		this.emit(':tell', "No problem. An active lifestyle keeps you happy, and healthy.");
 	},
 	'AMAZON.CancelIntent': function () {
 		this.emit('AMAZON.StopIntent');

@@ -2,6 +2,7 @@ const moment = require("moment");
 const request = require("request-promise");
 const log = require("../log")(__filename);
 const xmlescape = require("xml-escape");
+const states = require("../states");
 
 module.exports = {
 	'LaunchRequest': function () {
