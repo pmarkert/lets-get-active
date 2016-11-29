@@ -86,21 +86,22 @@ module.exports = {
 		this.emit(":ask", "Sure, I'll be happy to help you find events but first, I need to know where you want me to search. Please tell me the name of any US city, state, or zipcode.");
 	},
 	"SetLocationAndClearDate": function() {
+debugger;
 		delete this.attributes.start_date;
 		log("Cleared the date, about to set the location");
-		this.emit("SetLocation");
+		this.emitWithState("SetLocation");
 	},
 	'AMAZON.HelpIntent': function () {
-		this.emit(':ask', "Ask me to find a race near any U.S. city, state, or zipcode.");
+		this.emit(':ask', "You can ask me to find information about upcoming running events such as races near any U.S. city, state, or zipcode. I can search in the near future or at a future date. When or where would you like for me to search?");
 	},
 	'AMAZON.CancelIntent': function () {
-		this.emit('AMAZON.StopIntent');
+		this.emitWithState('AMAZON.StopIntent');
 	},
 	'AMAZON.StopIntent': function () {
 		this.emit(':tell', "No problem. An active lifestyle keeps you happy, and healthy.");
 	},
 	'AMAZON.CancelIntent': function () {
-		this.emit('AMAZON.StopIntent');
+		this.emitWithState('AMAZON.StopIntent');
 	},
 	'AMAZON.StopIntent': function () {
 		this.emit(':tell', "No problem. Just remember that an active lifestyle keeps you happy and healthy.");

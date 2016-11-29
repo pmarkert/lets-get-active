@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "SSML",
+      "ssml": "<speak> You can ask me to find information about upcoming running events such as races near any U.S. city, state, or zipcode. I can search in the near future or at a future date. When or where would you like for me to search? </speak>"
+    },
+    "shouldEndSession": false
+  },
+  "sessionAttributes": {
+    "STATE": "_search"
+  }
+}
