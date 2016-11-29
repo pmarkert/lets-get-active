@@ -3,7 +3,7 @@
     "response": {
       "outputSpeech": {
 	"type": "SSML",
-	"ssml": "<speak> Let’s get active! I&apos;ll help you find some local races and activities. Let’s start with a location. In what city would you like me to search? </speak>"
+        "ssml": "<speak> Let’s get active! I'll help you find some local races and activities. Let’s start with a location. In what city would you like me to search? </speak>"
       },
       "shouldEndSession": false,
       "reprompt": {

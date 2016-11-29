@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "SSML",
+      "ssml": "<speak> I&apos;m sorry but I didn&apos;t find any results within 20 miles of cancel, starting Monday November 28th or later. When else, or where else would you like me to search? </speak>"
+    },
+    "shouldEndSession": false
+  },
+  "sessionAttributes": {
+    "STATE": "_search",
+    "location": "cancel",
+    "start_date": "2016-11-28",
+    "distance": "20"
+  }
+}

@@ -3,7 +3,7 @@
   "response": {
     "outputSpeech": {
       "type": "SSML",
-      "ssml": "<speak> Sure, I&apos;ll be happy to help you find events but first, I need to know where you want me to search. Please tell me the name of any US city, state, or zipcode. </speak>"
+      "ssml": "<speak> Sure, I'll be happy to help you find events but first, I need to know where you want me to search. Please tell me the name of any US city, state, or zipcode. </speak>"
     },
     "shouldEndSession": false
   },

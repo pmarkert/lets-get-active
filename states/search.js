@@ -48,7 +48,7 @@ module.exports = {
 				const total_results = result.total_results;
 				if(total_results==0) {
 					delete this.handler.state;
-					return this.emit(":ask", xmlescape(`I'm sorry, I didn't find any results within ${this.attributes.distance} miles of ${this.attributes.location} starting on or after ${start_date.format("dddd MMMM Do")}. When or where else would you like for me to search?`));
+					return this.emit(":ask", xmlescape(`I'm sorry but I didn't find any results within ${this.attributes.distance} miles of ${this.attributes.location}, starting ${start_date.format("dddd MMMM Do")} or later. When else, or where else would you like me to search?`));
 				}
 				else {
 					this.handler.state = states.GOTO_LIST;

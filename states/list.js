@@ -9,7 +9,7 @@ module.exports = {
 		const race = this.attributes.results[this.attributes.index];
 		const output = `${race.name} is on ${race.date.readable} at ${race.location}`;
 		log(`ItemSummary - ${output}`);
-		this.emit(':ask', output, "You can say repeat that, more information, next, previous, or start over");
+		this.emit(':ask', xmlescape(output), "You can say repeat that, more information, next, previous, or start over");
 	},
 	'ItemDetail': function() {
 		const race = this.attributes.results[this.attributes.index];

@@ -3,7 +3,7 @@
   "response": {
     "outputSpeech": {
       "type": "SSML",
-      "ssml": "<speak> To hear about the events I&amp;apos;ve found, you can say Yes otherwise, You can also give me a different location or date to search. </speak>"
+      "ssml": "<speak> To hear about the events I&apos;ve found, you can say Yes otherwise, You can also give me a different location or date to search. </speak>"
     },
     "shouldEndSession": false
   },

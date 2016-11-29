@@ -3,7 +3,7 @@
   "response": {
     "outputSpeech": {
       "type": "SSML",
-      "ssml": "<speak> I&apos;m sorry, I&apos;m not sure what you meant. When or where would you like for me to search for events? </speak>"
+      "ssml": "<speak> I'm sorry, I'm not sure what you meant. When or where would you like for me to search for events? </speak>"
     },
     "shouldEndSession": false
   },

@@ -3,11 +3,97 @@
   "response": {
     "outputSpeech": {
       "type": "SSML",
-      "ssml": "<speak> I&amp;apos;m not sure what you meant. I&amp;apos;ve done a search for events within undefined miles of undefined on or after Invalid date and found undefined. To hear about them, you can say Yes otherwise, You can also tell me a different location date to search. </speak>"
+      "ssml": "<speak> I&apos;m not sure what you meant. I&apos;ve done a search for events within 20 miles of Las Vegas Nevada on or after Monday November 28th and found 21. To hear about them, you can say Yes otherwise, You can also tell me a different location date to search. </speak>"
     },
     "shouldEndSession": false
   },
   "sessionAttributes": {
-    "STATE": "_goto_list"
+    "distance": "20",
+    "location": "Las Vegas Nevada",
+    "STATE": "_goto_list",
+    "results": [
+      {
+        "name": "Dashing Through The Square 5K Walk/Run",
+        "location": "Marietta Square",
+        "date": {
+          "value": "2016-12-02",
+          "readable": "Friday December 2nd"
+        }
+      },
+      {
+        "name": "Marietta Mardi Gras 5K, 1K & Tot Trot",
+        "location": "Glover Park - Marietta Square",
+        "date": {
+          "value": "2017-02-10",
+          "readable": "Friday February 10th"
+        }
+      },
+      {
+        "name": "Sleighbells on the Square 5k/1k/Tot Trot 2016",
+        "location": "Downtown Marietta Square",
+        "date": {
+          "value": "2016-12-09",
+          "readable": "Friday December 9th"
+        }
+      },
+      {
+        "name": "Wonderful Days of Winter 5K/1 Mile",
+        "location": "St James Episcopal Church",
+        "date": {
+          "value": "2017-01-06",
+          "readable": "Friday January 6th"
+        }
+      },
+      {
+        "name": "Miles 4 Major 5K",
+        "location": "Maple Avenue Methodist Church",
+        "date": {
+          "value": "2017-03-24",
+          "readable": "Friday March 24th"
+        }
+      },
+      {
+        "name": "Run the Lights of Life 5K/1K Presented by Life University",
+        "location": "Life University",
+        "date": {
+          "value": "2016-12-02",
+          "readable": "Friday December 2nd"
+        }
+      },
+      {
+        "name": "Chasing Moonlight / Racing Sunlight, the 5K in Paradise!",
+        "location": "Town Center Mall",
+        "date": {
+          "value": "2017-03-11",
+          "readable": "Saturday March 11th"
+        }
+      },
+      {
+        "name": "The Locomotive Half Marathon / 5K (Presented by First Watch)",
+        "location": "Barrett Summit",
+        "date": {
+          "value": "2016-12-10",
+          "readable": "Saturday December 10th"
+        }
+      },
+      {
+        "name": "Be the Change 5k",
+        "location": "Kennesaw United Methodist Church",
+        "date": {
+          "value": "2017-03-03",
+          "readable": "Friday March 3rd"
+        }
+      },
+      {
+        "name": "Spring Bloom 5k",
+        "location": "Lovinggood Middle School",
+        "date": {
+          "value": "2017-03-24",
+          "readable": "Friday March 24th"
+        }
+      }
+    ],
+    "start_date": "2016-11-28",
+    "total_results": 21
   }
 }
