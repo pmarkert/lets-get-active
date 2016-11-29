@@ -3,7 +3,7 @@
   "response": {
     "outputSpeech": {
       "type": "SSML",
-      "ssml": "<speak> Marietta Mardi Gras 5K, 1K & Tot Trot is on Friday February 10th at Glover Park - Marietta Square </speak>"
+      "ssml": "<speak> Marietta Mardi Gras 5K, 1K &amp; Tot Trot is on Friday February 10th at Glover Park - Marietta Square </speak>"
     },
     "shouldEndSession": false,
     "reprompt": {

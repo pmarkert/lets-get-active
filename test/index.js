@@ -19,7 +19,6 @@ describe("Event processing", function(done) {
 						.then(response => {
 							try {
 								const response_filename = filename.substring(0,filename.length - 5) + ".response.json";
-debugger;
 								if(!fs.existsSync(`./test/events/${response_filename}`)) {
 									console.log(`Response for ${filename} is not in the test file, but result was:`);
 									console.log(JSON.stringify(response, null, 2));
