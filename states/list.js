@@ -46,6 +46,8 @@ module.exports = {
 		this.emit(':ask', "You can ask me to repeat the summary, go to the next item, go to the previous item, or start over");
 	},
 	'AMAZON.StartOverIntent': function() {
+		delete this.attributes.index;
+		delete this.attributes.results;
 		this.handler.state = states.SEARCH;
 		this.emitWithState("DoSearch");
 	},
@@ -58,6 +60,7 @@ module.exports = {
 	'SessionEndedRequest': function () {
 		this.handler.state = states.SEARCH;
 		delete this.attributes.results;
+		delete this.attributes.index;
 		if(process.env.DYANMO_TABLE) {
 			this.emit(':saveState', true); // Be sure to call :saveState to persist your session attributes in DynamoDB
 		}
@@ -66,6 +69,6 @@ module.exports = {
 		}
 	},
 	'Unhandled': function() {
-		this.emit(':ask', "I'm sorry, I'm not sure what you meant. You can ask me to repeat the summary, go to the next item, go to the previous item, start over, or start over");
+		this.emit(':ask', "I'm sorry, I'm not sure what you meant. You can ask me to repeat the summary, go to the next item, go to the previous item, or start over");
 	}
 };

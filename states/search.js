@@ -20,6 +20,7 @@ function transform_results(result) {
 
 module.exports = {
 	'LaunchRequest': function () {
+		log("Attributes - " + JSON.stringify(this.attributes, null, 2));
 		delete this.attributes.start_date;
 		if(this.attributes.location) {
 			return this.emitWithState("DoSearch");
@@ -47,14 +48,16 @@ module.exports = {
 				log("Active.com search completed - " + JSON.stringify(result, null, 2));
 				const total_results = result.total_results;
 				if(total_results==0) {
+					this.emit(":ask", xmlescape(`I'm sorry but I didn't find any results within ${this.attributes.distance} miles of ${this.attributes.location}, starting ${start_date.format("dddd MMMM Do")} or later. When else, or where else would you like me to search?`));
 					delete this.handler.state;
-					return this.emit(":ask", xmlescape(`I'm sorry but I didn't find any results within ${this.attributes.distance} miles of ${this.attributes.location}, starting ${start_date.format("dddd MMMM Do")} or later. When else, or where else would you like me to search?`));
+					delete this.attributes.location;
+					delete this.attributes.start_date;
 				}
 				else {
 					this.handler.state = states.GOTO_LIST;
 					this.attributes.results = transform_results(result);
 					this.attributes.total_results = result.total_results;
-					return this.emit(":ask", xmlescape(`OK, I found ${total_results} events within ${this.attributes.distance} miles of ${this.attributes.location} starting on or after ${start_date.format("dddd MMMM Do")}. Would you like to hear about them?`));
+					this.emit(":ask", xmlescape(`OK, I found ${total_results} events within ${this.attributes.distance} miles of ${this.attributes.location} starting ${start_date.format("dddd MMMM Do")} or later. Would you like to hear about them?`));
 				}
 			})
 			.catch(function(err) {
@@ -121,6 +124,7 @@ module.exports = {
 	},
 	'SessionEndedRequest': function () {
 		delete this.attributes.results;
+		delete this.attributes.index;
 		if(process.env.DYANMO_TABLE) {
 			this.emit(':saveState', true); // Be sure to call :saveState to persist your session attributes in DynamoDB
 		}

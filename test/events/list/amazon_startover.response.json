@@ -3,14 +3,13 @@
   "response": {
     "outputSpeech": {
       "type": "SSML",
-      "ssml": "<speak> OK, I found 21 events within 20 miles of Las Vegas Nevada starting on or after Monday November 28th. Would you like to hear about them? </speak>"
+      "ssml": "<speak> OK, I found 21 events within 20 miles of Las Vegas Nevada starting Monday November 28th or later. Would you like to hear about them? </speak>"
     },
     "shouldEndSession": false
   },
   "sessionAttributes": {
     "distance": "20",
     "STATE": "_goto_list",
-    "index": 2,
     "location": "Las Vegas Nevada",
     "results": [
       {

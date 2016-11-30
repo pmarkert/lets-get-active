@@ -10,6 +10,7 @@ exports.handler = (event, context) => {
 	alexa.appId = process.env.APP_ID; 
 	alexa.registerHandlers({ 
 		"LaunchRequest": function() {
+			log("Attributes - " + JSON.stringify(this.attributes, null, 2));
 			this.handler.state = states.SEARCH;
 			delete this.attributes.start_date;
 			this.emitWithState("LaunchRequest");
