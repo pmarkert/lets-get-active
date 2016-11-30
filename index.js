@@ -16,12 +16,19 @@ exports.handler = (event, context) => {
 			this.emitWithState("LaunchRequest");
 		},
 		'SessionEndedRequest': function () {
+			this.emit("AMAZON.StopIntent");
+		},
+		"AMAZON.StopIntent": function() {
+			log("Persisting attribute - " + JSON.stringify(this.attributes, null, 2));
+			this.handler.state = states.SEARCH;
+			delete this.attributes.results;
+			delete this.attributes.index;
+			delete this.attributes.start_date;
+			delete this.attributes.total_results;
 			if(process.env.DYANMO_TABLE) {
 				this.emit(':saveState', true); // Be sure to call :saveState to persist your session attributes in DynamoDB
 			}
-			else {
-				this.emit(":tell", "Session ended.");
-			}
+			this.emit(':tell', "No problem. Remember, an active lifestyle keeps you both happy and healthy!");
 		},
 		"Unhandled": function() {
 			if(this.event.request.intent) {

@@ -55,18 +55,10 @@ module.exports = {
 		this.emitWithState('AMAZON.StopIntent');
 	},
 	'AMAZON.StopIntent': function () {
-		this.emit(':tell', "No problem. Just remember that an active lifestyle keeps you happy and healthy.");
+		this.emit("AMAZON.StopIntent");
 	},
 	'SessionEndedRequest': function () {
-		this.handler.state = states.SEARCH;
-		delete this.attributes.results;
-		delete this.attributes.index;
-		if(process.env.DYANMO_TABLE) {
-			this.emit(':saveState', true); // Be sure to call :saveState to persist your session attributes in DynamoDB
-		}
-		else {
-			this.emit(":tell", "Session ended.");
-		}
+		this.emit("AMAZON.StopIntent");
 	},
 	'Unhandled': function() {
 		this.emit(':ask', "I'm sorry, I'm not sure what you meant. You can ask me to repeat the summary, go to the next item, go to the previous item, or start over");

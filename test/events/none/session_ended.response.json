@@ -3,9 +3,11 @@
   "response": {
     "outputSpeech": {
       "type": "SSML",
-      "ssml": "<speak> Session ended. </speak>"
+      "ssml": "<speak> No problem. Remember, an active lifestyle keeps you both happy and healthy! </speak>"
     },
     "shouldEndSession": true
   },
-  "sessionAttributes": {}
+  "sessionAttributes": {
+     "STATE": "_search"
+  }
 }

@@ -113,24 +113,14 @@ module.exports = {
 	'AMAZON.CancelIntent': function () {
 		this.emitWithState('AMAZON.StopIntent');
 	},
-	'AMAZON.StopIntent': function () {
-		this.emit(':tell', "No problem. An active lifestyle keeps you happy, and healthy.");
-	},
 	'AMAZON.CancelIntent': function () {
-		this.emitWithState('AMAZON.StopIntent');
+		this.emit('AMAZON.StopIntent');
 	},
 	'AMAZON.StopIntent': function () {
-		this.emit(':tell', "No problem. Just remember that an active lifestyle keeps you happy and healthy.");
+		this.emit("AMAZON.StopIntent");
 	},
 	'SessionEndedRequest': function () {
-		delete this.attributes.results;
-		delete this.attributes.index;
-		if(process.env.DYANMO_TABLE) {
-			this.emit(':saveState', true); // Be sure to call :saveState to persist your session attributes in DynamoDB
-		}
-		else {
-			this.emit(":tell", "Session ended.");
-		}
+		this.emit("AMAZON.StopIntent");
 	},
 	'Unhandled': function() {
 		this.emit(':ask', "I'm sorry, I'm not sure what you meant. When or where would you like for me to search for events?");
