@@ -3,13 +3,13 @@
   "response": {
     "outputSpeech": {
       "type": "SSML",
-      "ssml": "<speak> Strip on the Strip 5k is on Saturday March 4th at The Las Vegas Strip / Circus Circus Hotel, Casino &amp; Theme Park </speak>"
+      "ssml": "<speak> Event number 3 is, the Strip on the Strip 5k, on Saturday March 4th, located at The Las Vegas Strip / Circus Circus Hotel, Casino &amp; Theme Park </speak>"
     },
     "shouldEndSession": false,
     "reprompt": {
       "outputSpeech": {
         "type": "SSML",
-        "ssml": "<speak> You can say repeat that, more information, next, previous, or start over </speak>"
+        "ssml": "<speak> You can say repeat that, more information, next, previous, goto a specific number,  or start over </speak>"
       }
     }
   },

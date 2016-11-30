@@ -3,29 +3,36 @@
   "response": {
     "outputSpeech": {
       "type": "SSML",
-      "ssml": "<speak> OK, I found 21 events within 20 miles of Las Vegas Nevada starting Monday November 28th or later. Would you like to hear about them? </speak>"
+      "ssml": "<speak> Event number 1 is, the The Color Run Las Vegas 2/25/17, on Saturday February 25th, located at Downtown Las Vegas </speak>"
     },
-    "shouldEndSession": false
+    "shouldEndSession": false,
+    "reprompt": {
+      "outputSpeech": {
+        "type": "SSML",
+        "ssml": "<speak> You can say repeat that, more information, next, previous, goto a specific number,  or start over </speak>"
+      }
+    }
   },
   "sessionAttributes": {
     "distance": "20",
-    "STATE": "_goto_list",
+    "STATE": "_list",
+    "index": 0,
     "location": "Las Vegas Nevada",
     "results": [
       {
         "name": "The Color Run Las Vegas 2/25/17",
         "location": "Downtown Las Vegas",
         "date": {
-          "value": "2017-02-24",
-          "readable": "Friday February 24th"
+          "value": "2017-02-25",
+          "readable": "Saturday February 25th"
         }
       },
       {
         "name": "Biggest Loser Race Series - Las Vegas, NV",
         "location": "Circus Circus",
         "date": {
-          "value": "2017-01-28",
-          "readable": "Saturday January 28th"
+          "value": "2017-01-29",
+          "readable": "Sunday January 29th"
         }
       },
       {
@@ -56,16 +63,16 @@
         "name": "The Super Run 5K- Las Vegas, NV 2017",
         "location": "Sunset Park",
         "date": {
-          "value": "2017-02-03",
-          "readable": "Friday February 3rd"
+          "value": "2017-02-04",
+          "readable": "Saturday February 4th"
         }
       },
       {
         "name": "5KColorBlast Color Run - Las Vegas, NV",
         "location": "Las Vegas - Sunset Park",
         "date": {
-          "value": "2017-03-24",
-          "readable": "Friday March 24th"
+          "value": "2017-03-25",
+          "readable": "Saturday March 25th"
         }
       },
       {
@@ -80,8 +87,8 @@
         "name": "Brady Heart Foundation 5k and 1mile walk",
         "location": "Sunset Park",
         "date": {
-          "value": "2017-02-10",
-          "readable": "Friday February 10th"
+          "value": "2017-02-11",
+          "readable": "Saturday February 11th"
         }
       },
       {

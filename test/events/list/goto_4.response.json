@@ -3,7 +3,7 @@
   "response": {
     "outputSpeech": {
       "type": "SSML",
-      "ssml": "<speak> Event number 1 is, the Dashing Through The Square 5K Walk/Run, on Friday December 2nd, located at Marietta Square </speak>"
+      "ssml": "<speak> Event number 4 is, the Wonderful Days of Winter 5K/1 Mile, on Friday January 6th, located at St James Episcopal Church </speak>"
     },
     "shouldEndSession": false,
     "reprompt": {
@@ -98,7 +98,7 @@
         }
       }
     ],
-    "index": 0,
+    "index": 3,
     "location": "Las Vegas Nevada",
     "state": "_goto_list_",
     "start_date": "2016-11-29",

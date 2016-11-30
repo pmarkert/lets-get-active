@@ -3,13 +3,13 @@
   "response": {
     "outputSpeech": {
       "type": "SSML",
-      "ssml": "<speak> Marietta Mardi Gras 5K, 1K &amp; Tot Trot is on Friday February 10th at Glover Park - Marietta Square </speak>"
+      "ssml": "<speak> Event number 2 is, the Marietta Mardi Gras 5K, 1K &amp; Tot Trot, on Friday February 10th, located at Glover Park - Marietta Square </speak>"
     },
     "shouldEndSession": false,
     "reprompt": {
       "outputSpeech": {
         "type": "SSML",
-        "ssml": "<speak> You can say repeat that, more information, next, previous, or start over </speak>"
+        "ssml": "<speak> You can say repeat that, more information, next, previous, goto a specific number,  or start over </speak>"
       }
     }
   },
