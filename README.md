@@ -69,6 +69,8 @@ I also made a mock instance of the bitly service for url-shortening. This one do
 ## alexa-skills-kit-sdk-for-nodejs improvements
 I used the alexa-skills-kit-sdk-for-nodejs SDK to do the development of this skill. I had written my own similar framework called [Wavelength](https://github.com/pmarkert/wavelength) over a year ago before there were any other solid frameworks to do lambda-based skill development. One feature that I had not finished adding to the Wavelength project was the ability to easily manage dynamic states. Now that the Amazon team has published an official SDK, I decided to take it for a roll with this skill. I did find quite a few small surprises with the SDK. Some of it was related to small documentation challenges, but one bug (in my opinion) that I found was that when submitting an ":ask" response that did not specifically include a reprompt value (which is documented as optional), The SDK wouldn't detect that a reprompt was missing and it would serialize the response with a reprompt value of "undefined". Needless to say, this caused me some surprise when I was first testing my skill and when I wanted to wait for the skill to time out, a few seconds later, Alexa says "Undefined!". :) Here is the [pull-request](https://github.com/alexa/alexa-skills-kit-sdk-for-nodejs/pull/40) that I submitted for this issue.
 
+![Running](doc/running.jpg)
+
 ## Dynamic loading of states
 I used the "enum-like" module that I created to distinguish the states to dynamically iterate each state and find/load the corresponding handlers module and load it in automatically. This way, I don't have to remember to go and register each new state.
 
