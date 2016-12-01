@@ -108,4 +108,4 @@ I used the "enum-like" module that I created to distinguish the states to dynami
 ![Alexa Interaction Model](doc/Lambda Environment.png)
 11. Once the function was created, I started working on a new node package. I initialized a .git repository, used npm init to setup the package.json, and made use of grunt and grunt-aws-lambda packages to prepare and deploy my function. 
 12. I created a DynamoDB table to store the attribute data. I did not see anywhere in the documentation for the alexa-sdk what the name of the primary key was supposed to be, so I looked into the src code for the library to find that it was expecting the primary key to be "userId". I added this information to the README.md and added it to the pull-request mentioned above. I added the name of the dynamo table as one of the environment variables for my Lambda function.
-![Alexa Interaction Model](doc/Lambda Trigger.png)
+![Alexa Interaction Model](doc/Dynamo Configuration.png)
