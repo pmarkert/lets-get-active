@@ -6,14 +6,18 @@ const xmlescape = require("xml-escape");
 
 module.exports = {
 	'AMAZON.YesIntent': function() {
-		this.handler.state = states.LIST;
+		this.handler.state = states.LIST_SUMMARY;
 		this.attributes.index = 0;
-		this.emitWithState("ItemSummary");
+		this.emitWithState("ListItems");
 	},
 	'AMAZON.NoIntent': function() {
 		this.handler.state = states.SEARCH;
 		delete this.attributes.results;
 		this.emit(":ask", "OK, no problem. What date or location would you like for me to search?");
+	},
+	"GotoNumber": function() {
+		this.handler.state = states.LIST;
+		this.emitWithState("GotoNumber");
 	},
 	'AMAZON.StartOverIntent': function() {
 		this.emitWithState("AMAZON.NoIntent");

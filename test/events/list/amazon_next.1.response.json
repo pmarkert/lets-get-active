@@ -9,7 +9,7 @@
     "reprompt": {
       "outputSpeech": {
         "type": "SSML",
-        "ssml": "<speak> You can say repeat that, more information, next, previous, goto a specific number,  or start over </speak>"
+        "ssml": "<speak> You can say repeat that, more information, next, previous, goto a specific number, or start over </speak>"
       }
     }
   },
@@ -105,4 +105,3 @@
     "total_results": 21
   }
 }
-

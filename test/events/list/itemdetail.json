@@ -24,7 +24,9 @@
 		"date": {
 		  "value": "2017-02-10",
 		  "readable": "Friday February 10th"
-		}
+		},
+		"logo": "https://photos-images.active.com/file/3/1/original/dfe6953c-aeba-416c-9b7a-9e0d2e82b211.jpg",
+		"register": "http://www.active.com/marietta-ga/running/distance-running-races/marietta-mardi-gras-5k-1k-and-tot-trot-2017?cmp=39-35-ephisys"
 	      },
 	      {
 		"name": "Sleighbells on the Square 5k/1k/Tot Trot 2016",
@@ -40,9 +42,7 @@
 		"date": {
 		  "value": "2017-01-06",
 		  "readable": "Friday January 6th"
-		},
-		"logo": "https://photos-images.active.com/file/3/1/original/dfe6953c-aeba-416c-9b7a-9e0d2e82b211.jpg",
-		"register": "http://www.active.com/marietta-ga/running/distance-running-races/marietta-mardi-gras-5k-1k-and-tot-trot-2017?cmp=39-35-ephisys"
+		}
 	      },
 	      {
 		"name": "Miles 4 Major 5K",
@@ -93,7 +93,7 @@
 		}
 	      }
 	    ],
-	    "index": 0,
+	    "index": 1,
 	    "location": "Las Vegas Nevada",
 	    "state": "_goto_list_",
 	    "start_date": "2016-11-29",
@@ -127,10 +127,7 @@
 	"timestamp": "2016-11-29T03:18:37Z",
 	"locale": "en-US",
 	"intent": {
-	    "name": "GotoNumber",
-	    "slots": {
-		"index": { "name" : "index", "value": 4 }
-            }
+	    "name": "ItemDetail"
 	}
     }
 }

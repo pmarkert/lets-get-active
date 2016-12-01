@@ -18,7 +18,9 @@
         "date": {
           "value": "2017-02-24",
           "readable": "Friday February 24th"
-        }
+        },
+        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/the-color-run-las-vegas-2-25-17-2017?cmp=39-35-ephisys",
+        "logo": "http://photos-images.active.com/file/3/1/original/2a25ba45-17d8-4c57-a44c-444bfdceffb2.jpg"
       },
       {
         "name": "Biggest Loser Race Series - Las Vegas, NV",
@@ -26,7 +28,9 @@
         "date": {
           "value": "2017-01-28",
           "readable": "Saturday January 28th"
-        }
+        },
+        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/biggest-loser-race-series-las-vegas-nv-2017?cmp=39-35-ephisys",
+        "logo": "http://photos-images.active.com/file/3/1/original/9816bcb5-0869-4de3-a436-684fe1d70963.jpg"
       },
       {
         "name": "Strip on the Strip 5k",
@@ -34,7 +38,9 @@
         "date": {
           "value": "2017-03-04",
           "readable": "Saturday March 4th"
-        }
+        },
+        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/strip-on-the-strip-5k-2017?cmp=39-35-ephisys",
+        "logo": "https://photos-images.active.com/file/3/1/original/fdf96623-2d1d-417c-b325-f7f87e831279.jpg"
       },
       {
         "name": "Run Away With Cirque du Soleil at the Springs Preserve 5K Run & 1-Mile Fun Walk 2017",
@@ -42,7 +48,9 @@
         "date": {
           "value": "2017-03-11",
           "readable": "Saturday March 11th"
-        }
+        },
+        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/run-away-with-cirque-du-soleil-at-the-springs-preserve-5k-run-and-1-mile-fun-walk-2017?cmp=39-35-ephisys",
+        "logo": "http://photos-images.active.com/file/3/1/original/960a4312-dace-43ca-aa08-ceb587a7c4cb.jpg"
       },
       {
         "name": "HHR Las Vegas",
@@ -50,7 +58,9 @@
         "date": {
           "value": "2017-01-28",
           "readable": "Saturday January 28th"
-        }
+        },
+        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/hhr-las-vegas-2017?cmp=39-35-ephisys",
+        "logo": "http://www.active.com/images/events/hotrace.gif"
       },
       {
         "name": "The Super Run 5K- Las Vegas, NV 2017",
@@ -58,7 +68,9 @@
         "date": {
           "value": "2017-02-03",
           "readable": "Friday February 3rd"
-        }
+        },
+        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/the-super-run-5k-las-vegas-nv-2017?cmp=39-35-ephisys",
+        "logo": "http://photos-images.active.com/file/3/1/original/4bb919ab-c353-42c5-bdd3-89fb20ef6c4e.jpg"
       },
       {
         "name": "5KColorBlast Color Run - Las Vegas, NV",
@@ -66,7 +78,9 @@
         "date": {
           "value": "2017-03-24",
           "readable": "Friday March 24th"
-        }
+        },
+        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/5kcolorblast-color-run-las-vegas-nv-2017?cmp=39-35-ephisys",
+        "logo": "https://photos-images.active.com/file/3/1/original/ffc3d027-3e4a-4123-bb6a-ca8153fab95e.jpg"
       },
       {
         "name": "2017 CBRE Cares Catch the Leprechaun 5K",
@@ -74,7 +88,9 @@
         "date": {
           "value": "2017-04-01",
           "readable": "Saturday April 1st"
-        }
+        },
+        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/cbre-cares-catch-the-leprechaun-5k-2017?cmp=39-35-ephisys",
+        "logo": "http://photos-images.active.com/file/3/1/original/0fc40557-03c4-4aa7-8b33-e5a98a99de1c.jpg"
       },
       {
         "name": "Brady Heart Foundation 5k and 1mile walk",
@@ -82,7 +98,9 @@
         "date": {
           "value": "2017-02-10",
           "readable": "Friday February 10th"
-        }
+        },
+        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/brady-heart-foundation-5k-and-1mile-walk-2017?cmp=39-35-ephisys",
+        "logo": "http://www.active.com/images/events/hotrace.gif"
       },
       {
         "name": "Run 4 Those Who Can't 5K Run and Family Walk",
@@ -90,7 +108,9 @@
         "date": {
           "value": "2016-12-03",
           "readable": "Saturday December 3rd"
-        }
+        },
+        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/run-4-those-who-can-t-5k-run-and-family-walk-2016?cmp=39-35-ephisys",
+        "logo": "http://www.active.com/images/events/hotrace.gif"
       }
     ],
     "start_date": "2016-11-28",

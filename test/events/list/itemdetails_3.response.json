@@ -1,0 +1,134 @@
+{
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "SSML",
+      "ssml": "<speak> I&apos;ve just sent you a card about 2016 Atlanta Jingle Bell Run 5k </speak>"
+    },
+    "shouldEndSession": false,
+    "reprompt": {
+      "outputSpeech": {
+        "type": "SSML",
+        "ssml": "<speak> You can say next, or previous, or start over, or goto a specific number </speak>"
+      }
+    },
+    "card": {
+      "type": "Standard",
+      "title": "2016 Atlanta Jingle Bell Run 5k",
+      "image": {
+        "smallImageUrl": "https://s3.amazonaws.com/lets-get-active/apple-touch-icon-precomposed.png"
+      },
+      "text": "The 2016 Atlanta Jingle Bell Run 5k is happening on Saturday December 10th at Centennial Olympic Park. \n For Information and registration: http://mockurl"
+    }
+  },
+  "sessionAttributes": {
+    "distance": "20",
+    "STATE": "_list",
+    "location": "Atlanta Georgia",
+    "index": "2",
+    "results": [
+      {
+        "name": "Hotlanta Half Marathon",
+        "location": "Pemberton Place - World of Coca-Cola",
+        "date": {
+          "value": "2017-06-11",
+          "readable": "Sunday June 11th"
+        },
+        "register": "http://www.active.com/atlanta-ga/running/hotlanta-half-marathon-2017?cmp=39-35-ephisys",
+        "logo": "http://photos-images.active.com/file/3/1/original/85269b81-26ff-48ac-8f12-fdbe93c3b58a.png"
+      },
+      {
+        "name": "Publix Georgia Marathon and Half Marathon",
+        "location": "Centennial Olympic Park",
+        "date": {
+          "value": "2017-03-19",
+          "readable": "Sunday March 19th"
+        },
+        "register": "http://www.active.com/atlanta-ga/running/distance-running-races/publix-georgia-marathon-and-half-marathon-2017?cmp=39-35-ephisys",
+        "logo": "http://photos-images.active.com/file/3/1/original/85269b81-26ff-48ac-8f12-fdbe93c3b58a.png"
+      },
+      {
+        "name": "2016 Atlanta Jingle Bell Run 5k",
+        "location": "Centennial Olympic Park",
+        "date": {
+          "value": "2016-12-10",
+          "readable": "Saturday December 10th"
+        },
+        "register": "http://www.active.com/atlanta-ga/running/distance-running-races/atlanta-jingle-bell-run-5k-2016?cmp=39-35-ephisys",
+        "logo": "http://photos-images.active.com/file/3/1/original/85269b81-26ff-48ac-8f12-fdbe93c3b58a.png"
+      },
+      {
+        "name": "Publix Georgia Marathon & Half Marathon",
+        "location": "Centennial Olympic Park",
+        "date": {
+          "value": "2017-03-19",
+          "readable": "Sunday March 19th"
+        },
+        "register": "http://www.active.com/atlanta-ga/running/distance-running-races/publix-georgia-marathon-and-half-marathon-2017-26787952?cmp=39-35-ephisys",
+        "logo": "http://www.active.com/images/events/hotrace.gif"
+      },
+      {
+        "name": "The Super Brawl 5K",
+        "location": "Der Biergarten",
+        "date": {
+          "value": "2017-02-04",
+          "readable": "Saturday February 4th"
+        },
+        "register": "http://www.active.com/atlanta-ga/running/distance-running-races/the-super-brawl-5k-2017?cmp=39-35-ephisys",
+        "logo": "http://www.active.com/images/events/hotrace.gif"
+      },
+      {
+        "name": "Stamp Out Poverty 5K Run/Walk",
+        "location": "Grant Park",
+        "date": {
+          "value": "2016-12-31",
+          "readable": "Saturday December 31st"
+        },
+        "register": "http://www.active.com/atlanta-ga/running/distance-running-races/stamp-out-poverty-5k-run-walk-2016-23139292?cmp=39-35-ephisys",
+        "logo": "https://photos-images.active.com/file/3/1/original/a9ea8a21-534f-492a-8354-a895295ba446.jpg"
+      },
+      {
+        "name": "2016 Atlanta BeltLine Eastside 10K",
+        "location": "Stoveworks",
+        "date": {
+          "value": "2016-12-03",
+          "readable": "Saturday December 3rd"
+        },
+        "register": "http://www.active.com/atlanta-ga/running/distance-running-races/atlanta-beltline-eastside-10k-2016?cmp=39-35-ephisys",
+        "logo": "http://www.active.com/images/events/hotrace.gif"
+      },
+      {
+        "name": "Dental Dash at Dawn 5K",
+        "location": "Historic Fourth Ward Park",
+        "date": {
+          "value": "2017-03-04",
+          "readable": "Saturday March 4th"
+        },
+        "register": "http://www.active.com/atlanta-ga/running/distance-running-races/dental-dash-at-dawn-5k-2017?cmp=39-35-ephisys",
+        "logo": "http://photos-images.active.com/file/3/1/original/35079c20-fd63-4f9c-b878-b40eee5af484.jpg"
+      },
+      {
+        "name": "Monday Night Brewing Westside 10",
+        "location": "Atlanta",
+        "date": {
+          "value": "2016-12-10",
+          "readable": "Saturday December 10th"
+        },
+        "register": "http://www.active.com/atlanta-ga/running/distance-running-races/monday-night-brewing-westside-10-2016?cmp=39-35-ephisys",
+        "logo": "http://photos-images.active.com/file/3/1/original/6e9b3852-a853-474c-99e5-f61bfc5fd910.png"
+      },
+      {
+        "name": "runningnerds WINTER BLAST GROUP RUN",
+        "location": "Atlanta",
+        "date": {
+          "value": "2016-12-17",
+          "readable": "Saturday December 17th"
+        },
+        "register": "http://www.active.com/atlanta-ga/running/distance-running-races/runningnerds-winter-blast-group-run-2016?cmp=39-35-ephisys",
+        "logo": "http://photos-images.active.com/file/3/1/original/8d40ebd1-97b6-44a9-9411-553bcf38f79f.jpg"
+      }
+    ],
+    "start_date": "2016-11-30",
+    "total_results": 62
+  }
+}

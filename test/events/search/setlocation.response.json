@@ -1,99 +1,119 @@
 {
-    "version": "1.0",
-    "response": {
-      "outputSpeech": {
-	"type": "SSML",
-        "ssml": "<speak> OK, I found 70 events within 20 miles of Marietta ga starting Monday November 28th or later. Would you like to hear about them? </speak>"
-      },
-      "shouldEndSession": false
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "SSML",
+      "ssml": "<speak> OK, I found 70 events within 20 miles of Marietta ga starting Monday November 28th or later. Would you like to hear about them? </speak>"
     },
-    "sessionAttributes": {
-      "location": "Marietta ga",
-      "start_date": "2016-11-28",
-      "distance": "20",
-      "results": [
-	{
-	  "name": "Dashing Through The Square 5K Walk/Run",
-	  "location": "Marietta Square",
-	  "date": {
-	    "value": "2016-12-02",
-	    "readable": "Friday December 2nd"
-	  }
-	},
-	{
-	  "name": "Marietta Mardi Gras 5K, 1K & Tot Trot",
-	  "location": "Glover Park - Marietta Square",
-	  "date": {
-	    "value": "2017-02-10",
-	    "readable": "Friday February 10th"
-	  }
-	},
-	{
-	  "name": "Sleighbells on the Square 5k/1k/Tot Trot 2016",
-	  "location": "Downtown Marietta Square",
-	  "date": {
-	    "value": "2016-12-09",
-	    "readable": "Friday December 9th"
-	  }
-	},
-	{
-	  "name": "Wonderful Days of Winter 5K/1 Mile",
-	  "location": "St James Episcopal Church",
-	  "date": {
-	    "value": "2017-01-06",
-	    "readable": "Friday January 6th"
-	  }
-	},
-	{
-	  "name": "Miles 4 Major 5K",
-	  "location": "Maple Avenue Methodist Church",
-	  "date": {
-	    "value": "2017-03-24",
-	    "readable": "Friday March 24th"
-	  }
-	},
-	{
-	  "name": "Run the Lights of Life 5K/1K Presented by Life University",
-	  "location": "Life University",
-	  "date": {
-	    "value": "2016-12-02",
-	    "readable": "Friday December 2nd"
-	  }
-	},
-	{
-	  "name": "Chasing Moonlight / Racing Sunlight, the 5K in Paradise!",
-	  "location": "Town Center Mall",
-	  "date": {
-	    "value": "2017-03-11",
-	    "readable": "Saturday March 11th"
-	  }
-	},
-	{
-	  "name": "The Locomotive Half Marathon / 5K (Presented by First Watch)",
-	  "location": "Barrett Summit",
-	  "date": {
-	    "value": "2016-12-10",
-	    "readable": "Saturday December 10th"
-	  }
-	},
-	{
-	  "name": "Be the Change 5k",
-	  "location": "Kennesaw United Methodist Church",
-	  "date": {
-	    "value": "2017-03-03",
-	    "readable": "Friday March 3rd"
-	  }
-	},
-	{
-	  "name": "Spring Bloom 5k",
-	  "location": "Lovinggood Middle School",
-	  "date": {
-	    "value": "2017-03-24",
-	    "readable": "Friday March 24th"
-	  }
-	}
-      ],
-      "total_results": 70,
-      "STATE": "_goto_list"
-    }
+    "shouldEndSession": false
+  },
+  "sessionAttributes": {
+    "STATE": "_goto_list",
+    "location": "Marietta ga",
+    "start_date": "2016-11-28",
+    "distance": "20",
+    "results": [
+      {
+        "name": "Dashing Through The Square 5K Walk/Run",
+        "location": "Marietta Square",
+        "date": {
+          "value": "2016-12-02",
+          "readable": "Friday December 2nd"
+        },
+        "register": "http://www.active.com/marietta-ga/running/distance-running-races/dashing-through-the-square-5k-walk-run-2016?cmp=39-35-ephisys",
+        "logo": "http://photos-images.active.com/file/3/1/original/f067ff6b-0237-4cdd-b33a-2049439b134a.png"
+      },
+      {
+        "name": "Marietta Mardi Gras 5K, 1K & Tot Trot",
+        "location": "Glover Park - Marietta Square",
+        "date": {
+          "value": "2017-02-10",
+          "readable": "Friday February 10th"
+        },
+        "register": "http://www.active.com/marietta-ga/running/distance-running-races/marietta-mardi-gras-5k-1k-and-tot-trot-2017?cmp=39-35-ephisys",
+        "logo": "https://photos-images.active.com/file/3/1/original/dfe6953c-aeba-416c-9b7a-9e0d2e82b211.jpg"
+      },
+      {
+        "name": "Sleighbells on the Square 5k/1k/Tot Trot 2016",
+        "location": "Downtown Marietta Square",
+        "date": {
+          "value": "2016-12-09",
+          "readable": "Friday December 9th"
+        },
+        "register": "http://www.active.com/marietta-ga/running/distance-running-races/sleighbells-on-the-square-5k-1k-tot-trot-2016-26025612?cmp=39-35-ephisys",
+        "logo": "http://photos-images.active.com/file/3/1/original/bc490559-b794-4834-adb0-d6ed1c84a070.jpg"
+      },
+      {
+        "name": "Wonderful Days of Winter 5K/1 Mile",
+        "location": "St James Episcopal Church",
+        "date": {
+          "value": "2017-01-06",
+          "readable": "Friday January 6th"
+        },
+        "register": "http://www.active.com/marietta-ga/running/distance-running-races/wonderful-days-of-winter-5k-1-mile-2017?cmp=39-35-ephisys",
+        "logo": "http://www.active.com/images/events/hotrace.gif"
+      },
+      {
+        "name": "Miles 4 Major 5K",
+        "location": "Maple Avenue Methodist Church",
+        "date": {
+          "value": "2017-03-24",
+          "readable": "Friday March 24th"
+        },
+        "register": "http://www.active.com/marietta-ga/running/distance-running-races/miles-4-major-5k-2017?cmp=39-35-ephisys",
+        "logo": "http://www.active.com/images/events/hotrace.gif"
+      },
+      {
+        "name": "Run the Lights of Life 5K/1K Presented by Life University",
+        "location": "Life University",
+        "date": {
+          "value": "2016-12-02",
+          "readable": "Friday December 2nd"
+        },
+        "register": "http://www.active.com/marietta-ga/running/distance-running-races/run-the-lights-of-life-5k-1k-presented-by-life-university-2016?cmp=39-35-ephisys",
+        "logo": "http://www.active.com/images/events/hotrace.gif"
+      },
+      {
+        "name": "Chasing Moonlight / Racing Sunlight, the 5K in Paradise!",
+        "location": "Town Center Mall",
+        "date": {
+          "value": "2017-03-11",
+          "readable": "Saturday March 11th"
+        },
+        "register": "http://www.active.com/kennesaw-ga/running/distance-running-races/chasing-moonlight-racing-sunlight-the-5k-in-paradise-2017?cmp=39-35-ephisys",
+        "logo": "http://www.active.com/images/events/hotrace.gif"
+      },
+      {
+        "name": "The Locomotive Half Marathon / 5K (Presented by First Watch)",
+        "location": "Barrett Summit",
+        "date": {
+          "value": "2016-12-10",
+          "readable": "Saturday December 10th"
+        },
+        "register": "http://www.active.com/kennesaw-ga/running/distance-running-races/the-locomotive-half-marathon-5k-presented-by-first-watch-2016?cmp=39-35-ephisys",
+        "logo": "http://www.active.com/images/events/hotrace.gif"
+      },
+      {
+        "name": "Be the Change 5k",
+        "location": "Kennesaw United Methodist Church",
+        "date": {
+          "value": "2017-03-03",
+          "readable": "Friday March 3rd"
+        },
+        "register": "http://www.active.com/kennesaw-ga/running/distance-running-races/be-the-change-5k-2017?cmp=39-35-ephisys",
+        "logo": "http://www.active.com/images/events/hotrace.gif"
+      },
+      {
+        "name": "Spring Bloom 5k",
+        "location": "Lovinggood Middle School",
+        "date": {
+          "value": "2017-03-24",
+          "readable": "Friday March 24th"
+        },
+        "register": "http://www.active.com/powder-springs-ga/running/distance-running-races/spring-bloom-5k-2017?cmp=39-35-ephisys",
+        "logo": "http://www.active.com/images/events/hotrace.gif"
+      }
+    ],
+    "total_results": 70
+  }
 }

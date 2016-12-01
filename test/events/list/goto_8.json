@@ -1,0 +1,150 @@
+{
+    "version": "1.0",
+    "session": {
+        "new": false,
+        "sessionId": "amzn1.echo-api.session.e0d737ad-3ded-448d-bb8c-85967b541f83",
+        "application": {
+            "applicationId": "amzn1.ask.skill.9200600c-ea41-4400-adbe-beb6efef00b1"
+        },
+        "attributes": {
+            "distance": "20",
+            "STATE": "_list",
+            "index": 8,
+            "location": "Santa Monica california",
+            "results": [
+                {
+                    "name": "Holiday Fun 5K, 10K, 15K, Half Marathon",
+                    "location": "Santa Monica/by the beach path in the cul de sac",
+                    "date": {
+                        "value": "2016-12-04",
+                        "readable": "Sunday December 4th"
+                    },
+                    "register": "http://www.active.com/santa-monica-ca/running/holiday-fun-5k-10k-15k-half-marathon-2016-25929607?cmp=39-35-ephisys",
+                    "logo": "http://www.active.com/images/events/hotrace.gif"
+                },
+                {
+                    "name": "Happy Holidays 5k, 10k, 15k, Half Marathon",
+                    "location": "Santa Monica/by the beach path in the cul de sac",
+                    "date": {
+                        "value": "2016-12-25",
+                        "readable": "Sunday December 25th"
+                    },
+                    "register": "http://www.active.com/santa-monica-ca/running/distance-running-races/happy-holidays-5k-10k-15k-half-marathon-2016?cmp=39-35-ephisys",
+                    "logo": "http://www.active.com/images/events/hotrace.gif"
+                },
+                {
+                    "name": "A New Year A New You 5k, 10k, 15k, Half Marathon",
+                    "location": "Santa Monica/by the beach path in the cul de sac",
+                    "date": {
+                        "value": "2017-01-08",
+                        "readable": "Sunday January 8th"
+                    },
+                    "register": "http://www.active.com/santa-monica-ca/running/distance-running-races/a-new-year-a-new-you-5k-10k-15k-half-marathon-2017?cmp=39-35-ephisys",
+                    "logo": "http://www.active.com/images/events/hotrace.gif"
+                },
+                {
+                    "name": "Winter Fun 5k, 10k, 15k, Half Marathon",
+                    "location": "Santa Monica/by the beach path in the cul de sac",
+                    "date": {
+                        "value": "2017-01-22",
+                        "readable": "Sunday January 22nd"
+                    },
+                    "register": "http://www.active.com/santa-monica-ca/running/distance-running-races/winter-fun-5k-10k-15k-half-marathon-2017?cmp=39-35-ephisys",
+                    "logo": "http://www.active.com/images/events/hotrace.gif"
+                },
+                {
+                    "name": "Winter Blast 5k, 10k, 15k, Half Marathon",
+                    "location": "Santa Monica/by the beach path in the cul de sac",
+                    "date": {
+                        "value": "2017-02-05",
+                        "readable": "Sunday February 5th"
+                    },
+                    "register": "http://www.active.com/santa-monica-ca/running/distance-running-races/winter-blast-5k-10k-15k-half-marathon-2017?cmp=39-35-ephisys",
+                    "logo": "http://www.active.com/images/events/hotrace.gif"
+                },
+                {
+                    "name": "Beach Blast 5k, 10k, 15k, Half Marathon",
+                    "location": "Santa Monica/by the beach path in the cul de sac",
+                    "date": {
+                        "value": "2017-02-19",
+                        "readable": "Sunday February 19th"
+                    },
+                    "register": "http://www.active.com/santa-monica-ca/running/distance-running-races/beach-blast-5k-10k-15k-half-marathon-2017?cmp=39-35-ephisys",
+                    "logo": "http://www.active.com/images/events/hotrace.gif"
+                },
+                {
+                    "name": "Screenland 5K",
+                    "location": "Downtown Culver City",
+                    "date": {
+                        "value": "2017-02-26",
+                        "readable": "Sunday February 26th"
+                    },
+                    "register": "http://www.active.com/culver-city-ca/running/distance-running-races/screenland-5k-2017?cmp=39-35-ephisys",
+                    "logo": "http://www.active.com/images/events/hotrace.gif"
+                },
+                {
+                    "name": "One Healthy Community 5K",
+                    "location": "Westside Jewish Community Center",
+                    "date": {
+                        "value": "2016-12-11",
+                        "readable": "Sunday December 11th"
+                    },
+                    "register": "http://www.active.com/los-angeles-ca/running/distance-running-races/one-healthy-community-5k-2016?cmp=39-35-ephisys",
+                    "logo": "http://www.active.com/images/events/hotrace.gif"
+                },
+                {
+                    "name": "Valley Crest Half Marathon 2017",
+                    "location": "Marvin Braude Mulholland Gateway Park",
+                    "date": {
+                        "value": "2017-06-11",
+                        "readable": "Sunday June 11th"
+                    },
+                    "register": "http://www.active.com/tarzana-ca/running/trail-run-races/valley-crest-half-marathon-2017?cmp=39-35-ephisys",
+                    "logo": "http://photos-images.active.com/file/3/1/original/db5e9d9e-4631-426f-ab79-237a2afac0c1.jpg"
+                },
+                {
+                    "name": "Reindeer Run 5k, 10k, 15k, Half Marathon",
+                    "location": "Woodley Park Section I",
+                    "date": {
+                        "value": "2016-12-18",
+                        "readable": "Sunday December 18th"
+                    },
+                    "register": "http://www.active.com/van-nuys-ca/running/distance-running-races/reindeer-run-5k-10k-15k-half-marathon-2016?cmp=39-35-ephisys",
+                    "logo": "http://www.active.com/images/events/hotrace.gif"
+                }
+            ],
+            "start_date": "2016-12-01",
+            "total_results": 36
+        },
+        "user": {
+            "userId": "amzn1.ask.account.AHNET5KM3HAY5NTGCBWNIRPZLIRKFVQXT46QX3B7DCHCX45AX7MQ4SVNDCMKZFJ3VD6ZXXVXTH4MX7XWNBFYNIYT6HGDMDYFAZSGN4RKVB3SQIHDU7ZLTNBUZKJ4HHYHFHQ63DQTCCDJWX6J54YGK3HQHR53L5DGPPVG5BKYLNMCEPIQ6CP2GUHGCDP2AR3DKRTCSFAZWEEKI7A"
+        }
+    },
+    "context": {
+        "AudioPlayer": {
+            "playerActivity": "IDLE"
+        },
+        "System": {
+            "application": {
+                "applicationId": "amzn1.ask.skill.9200600c-ea41-4400-adbe-beb6efef00b1"
+            },
+            "user": {
+                "userId": "amzn1.ask.account.AHNET5KM3HAY5NTGCBWNIRPZLIRKFVQXT46QX3B7DCHCX45AX7MQ4SVNDCMKZFJ3VD6ZXXVXTH4MX7XWNBFYNIYT6HGDMDYFAZSGN4RKVB3SQIHDU7ZLTNBUZKJ4HHYHFHQ63DQTCCDJWX6J54YGK3HQHR53L5DGPPVG5BKYLNMCEPIQ6CP2GUHGCDP2AR3DKRTCSFAZWEEKI7A"
+            },
+            "device": {
+                "supportedInterfaces": {
+                    "AudioPlayer": {}
+                }
+            }
+        }
+    },
+    "request": {
+        "type": "IntentRequest",
+        "requestId": "amzn1.echo-api.request.e4b41e98-40bd-460f-943c-9b9098365041",
+        "timestamp": "2016-12-01T01:14:04Z",
+        "locale": "en-US",
+        "intent": {
+            "name": "ItemDetail"
+        }
+    }
+}

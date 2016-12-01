@@ -1,0 +1,149 @@
+{
+    "version": "1.0",
+    "session": {
+        "new": false,
+        "sessionId": "amzn1.echo-api.session.c33c1b08-0d6a-4eb8-b680-ec7d79a8c43e",
+        "application": {
+            "applicationId": "amzn1.ask.skill.9200600c-ea41-4400-adbe-beb6efef00b1"
+        },
+        "attributes": {
+            "distance": "20",
+            "STATE": "_goto_list",
+            "location": "Los Angeles california",
+            "results": [
+                {
+                    "name": "The Pop Run",
+                    "location": "Pershing Park",
+                    "date": {
+                        "value": "2017-01-14",
+                        "readable": "Saturday January 14th"
+                    },
+                    "register": "http://www.active.com/los-angeles-ca/running/distance-running-races/the-pop-run-2017?cmp=39-35-ephisys",
+                    "logo": "http://www.active.com/images/events/hotrace.gif"
+                },
+                {
+                    "name": "LA Life Run",
+                    "location": "LA Live",
+                    "date": {
+                        "value": "2017-05-21",
+                        "readable": "Sunday May 21st"
+                    },
+                    "register": "http://www.active.com/los-angeles-ca/running/distance-running-races/la-life-run-2017?cmp=39-35-ephisys",
+                    "logo": "http://www.active.com/images/events/hotrace.gif"
+                },
+                {
+                    "name": "Christmas 2 Give 5k & 1/2 mile Dwarf Dash",
+                    "location": "Elysian Park",
+                    "date": {
+                        "value": "2016-12-17",
+                        "readable": "Saturday December 17th"
+                    },
+                    "register": "http://www.active.com/los-angeles-ca/running/cross-country-races/christmas-2-give-5k-and-1-2-mile-dwarf-dash-2016?cmp=39-35-ephisys",
+                    "logo": "http://photos-images.active.com/file/3/1/original/e9789b40-691f-4522-8c4b-380e85bace9d.jpg"
+                },
+                {
+                    "name": "One Healthy Community 5K",
+                    "location": "Westside Jewish Community Center",
+                    "date": {
+                        "value": "2016-12-11",
+                        "readable": "Sunday December 11th"
+                    },
+                    "register": "http://www.active.com/los-angeles-ca/running/distance-running-races/one-healthy-community-5k-2016?cmp=39-35-ephisys",
+                    "logo": "http://www.active.com/images/events/hotrace.gif"
+                },
+                {
+                    "name": "Homeless For The Holidays 5K Run / Walk",
+                    "location": "Griffith Park - Crystal Springs Equestrian Trail",
+                    "date": {
+                        "value": "2016-12-11",
+                        "readable": "Sunday December 11th"
+                    },
+                    "register": "http://www.active.com/los-angeles-ca/running/distance-running-races/homeless-for-the-holidays-5k-run-walk-2016?cmp=39-35-ephisys",
+                    "logo": "http://www.active.com/images/events/hotrace.gif"
+                },
+                {
+                    "name": "Run4Care 5K/10K",
+                    "location": "Griffith Park",
+                    "date": {
+                        "value": "2017-10-07",
+                        "readable": "Saturday October 7th"
+                    },
+                    "register": "http://www.active.com/los-angeles-ca/running/distance-running-races/run4care-5k-10k-2017?cmp=39-35-ephisys",
+                    "logo": "http://photos-images.active.com/file/3/1/original/fd580ac9-478e-4733-9ef5-07048ea0e012.jpg"
+                },
+                {
+                    "name": "Griffith Luau 5K & Kids 1K Run/Walk",
+                    "location": "Griffith Park",
+                    "date": {
+                        "value": "2017-08-12",
+                        "readable": "Saturday August 12th"
+                    },
+                    "register": "http://www.active.com/los-angeles-ca/running/distance-running-races/griffith-luau-5k-and-kids-1k-run-walk-2017?cmp=39-35-ephisys",
+                    "logo": "http://photos-images.active.com/file/3/1/original/a1e1d6c0-78aa-4cc8-9493-590745603770.jpg"
+                },
+                {
+                    "name": "Los Angeles River Half-Marathon & 5K/ 10K",
+                    "location": "Ferraro Soccer Field",
+                    "date": {
+                        "value": "2016-12-04",
+                        "readable": "Sunday December 4th"
+                    },
+                    "register": "http://www.active.com/los-angeles-ca/running/distance-running-races/los-angeles-river-half-marathon-and-5k-10k-2016?cmp=39-35-ephisys",
+                    "logo": "http://www.active.com/images/events/hotrace.gif"
+                },
+                {
+                    "name": "Pasadena Triathlon & 5k",
+                    "location": "Rose Bowl in Pasadena",
+                    "date": {
+                        "value": "2017-03-11",
+                        "readable": "Saturday March 11th"
+                    },
+                    "register": "http://www.active.com/pasadena-ca/running/distance-running-races/pasadena-triathlon-and-5k-2017?cmp=39-35-ephisys",
+                    "logo": "http://www.active.com/images/events/hotrace.gif"
+                },
+                {
+                    "name": "Screenland 5K",
+                    "location": "Downtown Culver City",
+                    "date": {
+                        "value": "2017-02-26",
+                        "readable": "Sunday February 26th"
+                    },
+                    "register": "http://www.active.com/culver-city-ca/running/distance-running-races/screenland-5k-2017?cmp=39-35-ephisys",
+                    "logo": "http://www.active.com/images/events/hotrace.gif"
+                }
+            ],
+            "start_date": "2016-12-01",
+            "total_results": 39
+        },
+        "user": {
+            "userId": "amzn1.ask.account.AHNET5KM3HAY5NTGCBWNIRPZLIRKFVQXT46QX3B7DCHCX45AX7MQ4SVNDCMKZFJ3VD6ZXXVXTH4MX7XWNBFYNIYT6HGDMDYFAZSGN4RKVB3SQIHDU7ZLTNBUZKJ4HHYHFHQ63DQTCCDJWX6J54YGK3HQHR53L5DGPPVG5BKYLNMCEPIQ6CP2GUHGCDP2AR3DKRTCSFAZWEEKI7A"
+        }
+    },
+    "context": {
+        "AudioPlayer": {
+            "playerActivity": "IDLE"
+        },
+        "System": {
+            "application": {
+                "applicationId": "amzn1.ask.skill.9200600c-ea41-4400-adbe-beb6efef00b1"
+            },
+            "user": {
+                "userId": "amzn1.ask.account.AHNET5KM3HAY5NTGCBWNIRPZLIRKFVQXT46QX3B7DCHCX45AX7MQ4SVNDCMKZFJ3VD6ZXXVXTH4MX7XWNBFYNIYT6HGDMDYFAZSGN4RKVB3SQIHDU7ZLTNBUZKJ4HHYHFHQ63DQTCCDJWX6J54YGK3HQHR53L5DGPPVG5BKYLNMCEPIQ6CP2GUHGCDP2AR3DKRTCSFAZWEEKI7A"
+            },
+            "device": {
+                "supportedInterfaces": {
+                    "AudioPlayer": {}
+                }
+            }
+        }
+    },
+    "request": {
+        "type": "IntentRequest",
+        "requestId": "amzn1.ask.skill.16b95a1c-36c3-4602-ab41-092825a9515d",
+        "timestamp": "2016-12-01T01:58:22Z",
+        "locale": "en-US",
+        "intent": {
+            "name": "AMAZON.YesIntent"
+        }
+    }
+}

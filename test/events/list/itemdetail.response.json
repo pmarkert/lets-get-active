@@ -3,14 +3,22 @@
   "response": {
     "outputSpeech": {
       "type": "SSML",
-      "ssml": "<speak> Event number 4 is, the Wonderful Days of Winter 5K/1 Mile, on Friday January 6th, located at St James Episcopal Church </speak>"
+      "ssml": "<speak> I&apos;ve just sent you a card about Marietta Mardi Gras 5K, 1K &amp; Tot Trot </speak>"
     },
     "shouldEndSession": false,
     "reprompt": {
       "outputSpeech": {
         "type": "SSML",
-        "ssml": "<speak> You can say repeat that, more information, next, previous, goto a specific number, or start over </speak>"
+        "ssml": "<speak> You can say next, or previous, or start over, or goto a specific number </speak>"
       }
+    },
+    "card": {
+      "type": "Standard",
+      "title": "Marietta Mardi Gras 5K, 1K &amp; Tot Trot",
+      "image": {
+        "smallImageUrl": "https://s3.amazonaws.com/lets-get-active/apple-touch-icon-precomposed.png"
+      },
+      "text": "The Marietta Mardi Gras 5K, 1K &amp; Tot Trot is happening on Friday February 10th at Glover Park - Marietta Square. \n For Information and registration: http://mockurl"
     }
   },
   "sessionAttributes": {
@@ -31,7 +39,9 @@
         "date": {
           "value": "2017-02-10",
           "readable": "Friday February 10th"
-        }
+        },
+        "logo": "https://photos-images.active.com/file/3/1/original/dfe6953c-aeba-416c-9b7a-9e0d2e82b211.jpg",
+        "register": "http://www.active.com/marietta-ga/running/distance-running-races/marietta-mardi-gras-5k-1k-and-tot-trot-2017?cmp=39-35-ephisys"
       },
       {
         "name": "Sleighbells on the Square 5k/1k/Tot Trot 2016",
@@ -47,9 +57,7 @@
         "date": {
           "value": "2017-01-06",
           "readable": "Friday January 6th"
-        },
-        "logo": "https://photos-images.active.com/file/3/1/original/dfe6953c-aeba-416c-9b7a-9e0d2e82b211.jpg",
-        "register": "http://www.active.com/marietta-ga/running/distance-running-races/marietta-mardi-gras-5k-1k-and-tot-trot-2017?cmp=39-35-ephisys"
+        }
       },
       {
         "name": "Miles 4 Major 5K",
@@ -100,7 +108,7 @@
         }
       }
     ],
-    "index": 3,
+    "index": 1,
     "location": "Las Vegas Nevada",
     "state": "_goto_list_",
     "start_date": "2016-11-29",

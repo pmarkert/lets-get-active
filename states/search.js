@@ -12,7 +12,9 @@ function transform_results(result) {
 		results.push({ 
 			name : race.assetName, 
 			location : race.place.placeName, 
-			date : { value: race_date.format("YYYY-MM-DD"), readable: race_date.format("dddd MMMM Do") }
+			date : { value: race_date.format("YYYY-MM-DD"), readable: race_date.format("dddd MMMM Do") },
+			register: race.urlAdr,
+			logo: race.logoUrlAdr
 		});
 	}
 	return results;
@@ -60,7 +62,7 @@ module.exports = {
 					this.emit(":ask", xmlescape(`OK, I found ${total_results} events within ${this.attributes.distance} miles of ${this.attributes.location} starting ${start_date.format("dddd MMMM Do")} or later. Would you like to hear about them?`));
 				}
 			})
-			.catch(function(err) {
+			.catch((err) => {
 				log(`An error occurred - ${err}`);
 			});
 	},

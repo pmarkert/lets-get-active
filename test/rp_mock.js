@@ -7,7 +7,12 @@ module.exports = {
 			then: function(callback) {
 				const url = options.url || options;
 				const hash = crypto.createHash("MD5");
-				hash.update(url);
+				if(typeof(url)=="string") {
+					hash.update(url);
+				}
+				else {
+					hash.update(url.uri);
+				}
 				filename = hash.digest("hex");
 				try {
 					callback(require(`./responses/${filename}.json`));

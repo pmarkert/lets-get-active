@@ -22,8 +22,13 @@ describe("Event processing:", function(done) {
 									try {
 										const response_filename = path.join("events", dirname, filename.substring(0,filename.length - 5) + ".response.json");
 										if(!fs.existsSync(path.resolve(__dirname, response_filename))) {
-											console.log(`Response for ${response_filename} does not exist:`);
-											console.log(JSON.stringify(response, null, 2));
+											if(process.env.SAVE_RESPONSES) {
+												fs.writeFileSync(path.resolve(__dirname, response_filename), JSON.stringify(response, null, 2));
+												console.log(`Response for ${response_filename} saved.`);
+											} else {
+												console.log(`Response for ${response_filename} does not exist:`);
+												console.log(JSON.stringify(response, null, 2));
+											}
 											return event_done(`Response file ${response_filename} does not exist yet.`);
 										}
 										const expected_response = require("./" + response_filename);

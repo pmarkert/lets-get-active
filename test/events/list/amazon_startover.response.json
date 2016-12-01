@@ -3,104 +3,14 @@
   "response": {
     "outputSpeech": {
       "type": "SSML",
-      "ssml": "<speak> Event number 1 is, the The Color Run Las Vegas 2/25/17, on Saturday February 25th, located at Downtown Las Vegas </speak>"
+      "ssml": "<speak> OK, sure. When else or where else would you like for me to search? </speak>"
     },
-    "shouldEndSession": false,
-    "reprompt": {
-      "outputSpeech": {
-        "type": "SSML",
-        "ssml": "<speak> You can say repeat that, more information, next, previous, goto a specific number,  or start over </speak>"
-      }
-    }
+    "shouldEndSession": false
   },
   "sessionAttributes": {
     "distance": "20",
-    "STATE": "_list",
-    "index": 0,
+    "STATE": "_search",
     "location": "Las Vegas Nevada",
-    "results": [
-      {
-        "name": "The Color Run Las Vegas 2/25/17",
-        "location": "Downtown Las Vegas",
-        "date": {
-          "value": "2017-02-25",
-          "readable": "Saturday February 25th"
-        }
-      },
-      {
-        "name": "Biggest Loser Race Series - Las Vegas, NV",
-        "location": "Circus Circus",
-        "date": {
-          "value": "2017-01-29",
-          "readable": "Sunday January 29th"
-        }
-      },
-      {
-        "name": "Strip on the Strip 5k",
-        "location": "The Las Vegas Strip / Circus Circus Hotel, Casino & Theme Park",
-        "date": {
-          "value": "2017-03-04",
-          "readable": "Saturday March 4th"
-        }
-      },
-      {
-        "name": "Run Away With Cirque du Soleil at the Springs Preserve 5K Run & 1-Mile Fun Walk 2017",
-        "location": "Springs Preserve",
-        "date": {
-          "value": "2017-03-11",
-          "readable": "Saturday March 11th"
-        }
-      },
-      {
-        "name": "HHR Las Vegas",
-        "location": "Sunset Park",
-        "date": {
-          "value": "2017-01-28",
-          "readable": "Saturday January 28th"
-        }
-      },
-      {
-        "name": "The Super Run 5K- Las Vegas, NV 2017",
-        "location": "Sunset Park",
-        "date": {
-          "value": "2017-02-04",
-          "readable": "Saturday February 4th"
-        }
-      },
-      {
-        "name": "5KColorBlast Color Run - Las Vegas, NV",
-        "location": "Las Vegas - Sunset Park",
-        "date": {
-          "value": "2017-03-25",
-          "readable": "Saturday March 25th"
-        }
-      },
-      {
-        "name": "2017 CBRE Cares Catch the Leprechaun 5K",
-        "location": "Kellogg Zaher Park",
-        "date": {
-          "value": "2017-04-01",
-          "readable": "Saturday April 1st"
-        }
-      },
-      {
-        "name": "Brady Heart Foundation 5k and 1mile walk",
-        "location": "Sunset Park",
-        "date": {
-          "value": "2017-02-11",
-          "readable": "Saturday February 11th"
-        }
-      },
-      {
-        "name": "Run 4 Those Who Can't 5K Run and Family Walk",
-        "location": "Kellogg Zaher Park",
-        "date": {
-          "value": "2016-12-03",
-          "readable": "Saturday December 3rd"
-        }
-      }
-    ],
-    "start_date": "2016-11-28",
-    "total_results": 21
+    "start_date": "2016-11-28"
   }
 }
