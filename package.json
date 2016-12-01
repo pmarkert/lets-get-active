@@ -18,16 +18,15 @@
     "xml-escape": "^1.1.0"
   },
   "devDependencies": {
-    "async": "^2.1.4",
-    "aws-lambda-mock-context": "^3.0.1",
+    "alexa-skill-tester": "^1.0.1",
     "aws-sdk": "^2.7.8",
-    "chai": "^3.5.0",
     "grunt": "^1.0.1",
     "grunt-aws-lambda": "^0.13.0",
     "mocha": "^3.2.0"
   },
   "bundledDependencies": [
     "alexa-sdk",
+    "bitly",
     "lodash",
     "moment",
     "request-promise"
