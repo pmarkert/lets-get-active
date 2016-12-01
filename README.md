@@ -64,4 +64,17 @@ I used the alexa-skills-kit-sdk-for-nodejs SDK to do the development of this ski
 ## Dynamic loading of states
 I used the "enum-like" module that I created to distinguish the states to dynamically iterate each state and find/load the corresponding handlers module and load it in automatically. This way, I don't have to remember to go and register each new state.
 
+## How-to
+To create the skill, I used the following packages:
+* alexa-sdk - the router/response framework
+* aws-sdk - for reading/writing the logo images to S3
+* bitly - for shortening the registration urls
+* lodash - for the sorting and some utility methods
+* moment - for date manipulation, parsing, and formatting
+
+## Steps
+1. I applied for an API key with the Active.com developer network. http://developer.active.com/ They had shutdown new applications to their search API, however after I sent them an email, they were kind enough to provide me with a key. This key is stored as an environment variable in AWS Lambda, encrypted at rest with my KMS keys.
+2. Created a new skill entry in my Alexa developer portal specifying the name of my skill and the invocation name. The description, language, logo, and country availability. This generates a new skill/application Id for the skill. 
+3. Next I created my Intent Schema. The Intent Schema defines which interactions make use of what variables (slots) and the types for those slot values. The contents of my intent schema are also stored in the source-code repository under /doc/intent_schema.json
+* request-promise
 
