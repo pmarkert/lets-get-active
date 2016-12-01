@@ -75,6 +75,6 @@ To create the skill, I used the following packages:
 ## Steps
 1. I applied for an API key with the Active.com developer network. http://developer.active.com/ They had shutdown new applications to their search API, however after I sent them an email, they were kind enough to provide me with a key. This key is stored as an environment variable in AWS Lambda, encrypted at rest with my KMS keys.
 2. Created a new skill entry in my Alexa developer portal specifying the name of my skill and the invocation name. The description, language, logo, and country availability. This generates a new skill/application Id for the skill. 
-3. Next I created my Intent Schema. The Intent Schema defines which interactions make use of what variables (slots) and the types for those slot values. The contents of my intent schema are also stored in the source-code repository under /doc/intent_schema.json
+3. Next I created my Intent Schema. The Intent Schema defines which interactions make use of what variables (slots) and the types for those slot values. The contents of my intent schema are also stored in the source-code repository under [doc/intent_schema.json](doc/intent_schema.json)
 * request-promise
 
