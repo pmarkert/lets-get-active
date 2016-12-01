@@ -1,1 +1,13 @@
-{"retries":0,"total_results":0,"items_per_page":30,"start_index":0,"facets":[],"facet_values":[],"suggestions":[],"results":[],"radius":25,"start_date":"","sort":"date_asc"}
+{
+  "retries": 0,
+  "total_results": 0,
+  "items_per_page": 30,
+  "start_index": 0,
+  "facets": [],
+  "facet_values": [],
+  "suggestions": [],
+  "results": [],
+  "radius": 25,
+  "start_date": "",
+  "sort": "date_asc"
+}
