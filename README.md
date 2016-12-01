@@ -22,7 +22,9 @@ Sample converation:
 * You: Give me more details about that one.
 * Alexa: Sure, I've sent a card to your Alexa app where you can get more information and register.
 ...
+
 ![Amazon Alexa Logo](doc/Alexa Logo.png) 
+![Ready to run](doc/ready to run.jpg)
 
 ## Here are some of the interesting user-facing features and notes about the skill:
 * Looks for events near any US location on or after a specified date
