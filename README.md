@@ -9,7 +9,7 @@ Now you can use Alexa on an Amazon echo device to find out information about upc
 * You: "Atlanta, GA"
 * Alexa: "OK, I found 22 upcoming races near Atlanta, would you like to hear about them"
 
-Here are some of the interesting features of the skill:
+## Here are some of the interesting user notes/features of the skill:
 * Uses the Active.com API to query for running events near a US location
 * Looks for events on or after a specified date
 * The skill remembers some of your preferences (like the last search location) to make it quicker to search next time.
@@ -18,7 +18,7 @@ Here are some of the interesting features of the skill:
 * Users can ask for more details, which includes sending a card to the user's phone about the event with a shortened link to read more information and event register for the event.
 * Shows users the logo from the event if available
 
-And some of the interesting developer notes/features of the skill:
+## Here are some of the interesting developer notes/features of the skill:
 * Extensive unit-testing framework to mock requests and validate responses against the skill
 * Provides unit-test coverage capability that makes it possible to test every intent against every state
 * The skill makes use of multiples states to give context sensitivity to the conversation
