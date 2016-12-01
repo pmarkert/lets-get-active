@@ -7,6 +7,8 @@ This Alexa Skill prompts you to enter a location and optionally a starting date 
 
 Your race awaits you!
 
+![Amazon Alexa Logo](doc/Alexa Logo.png) 
+
 Sample converation:
 * You: "Alexa, ask Let's get active to find upcoming 5k races near Marietta, GA"
 * Alexa: "OK, I found 81 events within 25 miles of Marietta, GA starting Monday, November 28th or later. Would you like to hear about them?"
