@@ -21,7 +21,9 @@ Sample converation:
 * Alexa: Event number 4 is the POLAR BEAR RUN on Saturday, January 28th, located at Johnson Ferry Baptist Church.
 * You: Give me more details about that one.
 * Alexa: Sure, I've sent a card to your Alexa app where you can get more information and register.
+
 ...
+
 
 ![Amazon Alexa Logo](doc/Alexa Logo.png) 
 ![Ready to run](doc/ready to run.jpg)
