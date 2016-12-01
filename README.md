@@ -65,14 +65,14 @@ I used the alexa-skills-kit-sdk-for-nodejs SDK to do the development of this ski
 I used the "enum-like" module that I created to distinguish the states to dynamically iterate each state and find/load the corresponding handlers module and load it in automatically. This way, I don't have to remember to go and register each new state.
 
 ## Components and libraries used
-To run the skill in production, I used the following packages:
+**To run the skill in production, I used the following packages:**
 * alexa-sdk - the router/response framework
 * aws-sdk - for reading/writing the logo images to S3
 * bitly - for shortening the registration urls
 * lodash - for the sorting and some utility methods
 * moment - for date manipulation, parsing, and formatting
 
-For unit-testing, packaging, deployment and running the skill locally, I also used the following packages:
+**For unit-testing, packaging, deployment and running the skill locally, I also used the following packages:**
 * alexa-skill-tester - The package I created to do the unit testing (originally this was in the project and it got refactored out after some of the other developers expressed an interest in the technique).
 * grunt and grunt-aws-lambda - Packaging and deployment
 * mocha - unit testing framework
