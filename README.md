@@ -5,9 +5,9 @@ An active lifestyle keeps you both healthy and happy... or so they say ;) Now yo
 ![Powered by Active.com](doc/power-by--drk.png)
 This Alexa Skill prompts you to enter a location and optionally a starting date and it will search for the most popular running races that meet your criteria. Whether you are getting ready to jog your first 5k, you are an avid 10k/half-marathon runner, or you've got a few marathon's under your belt. And for any couch-potatoes out there, there are even some short 1K and 1 mile races. Whatever your motivation, just get out there and get moving! 
 
-Your race awaits you!
+![Runner](doc/lace up.jpg)
 
-![Amazon Alexa Logo](doc/Alexa Logo.png) 
+Your race awaits you!
 
 Sample converation:
 * You: "Alexa, ask Let's get active to find upcoming 5k races near Marietta, GA"
@@ -22,6 +22,7 @@ Sample converation:
 * You: Give me more details about that one.
 * Alexa: Sure, I've sent a card to your Alexa app where you can get more information and register.
 ...
+![Amazon Alexa Logo](doc/Alexa Logo.png) 
 
 ## Here are some of the interesting user-facing features and notes about the skill:
 * Looks for events near any US location on or after a specified date
@@ -29,7 +30,9 @@ Sample converation:
 * Intelligent ranking algorithm recommends events based upon a combination of popularity, date and proximity.
 * Provides summary information about the top-3 events and allows users to navigate through additional events.
 * Users can ask for more details about any event and receive a card on their phone with information and a shortened link to  register for the event.
-* Information card displays the race/event logo if available ![Information Card in the Alexa App](doc/Information Card.png)
+* Information card displays the race/event logo if available 
+
+![Information Card in the Alexa App](doc/Information Card.png)
 
 ## Here are some of the interesting developer notes/features of the skill:
 * Uses the Active.com API to query for events
