@@ -4,11 +4,14 @@ const states = require("../states");
 
 module.exports = {
 	'ListItems': function() {
-		var output = "";
-		for(var i=0;i<this.attributes.results.length;i++) {
-			output += (i+1).toString() + ", " + this.attributes.results[i].name + ". ";
+		var output = "Here are the 3 most popular events. Number ";
+		for(var i=0;i<3;i++) {
+			var race = this.attributes.results[i];
+			output += `${i+1} is the ${race.name}, on ${race.date.readable}, in ${race.location}. `;
 		}
-		this.emit(":ask", xmlescape(output), "You can say repeat that, say next, previous or goto a specific number, or start over with a new search.");
+		output + "You can ask me for more information about a specific event by number."
+		this.attributes.index = 2; // Set the user up for #4 to be next
+		this.emit(":ask", xmlescape(output), "You can ask me to repeat that, or give me a specific number, or I can start over with a new search.");
 	},
 	'AMAZON.RepeatIntent': function() {
 		this.emitWithState('ListItems');

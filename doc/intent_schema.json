@@ -59,6 +59,19 @@
       ]
     },
     {
+      "intent": "GotoNumber",
+      "slots": [
+        {
+          "name": "index",
+          "type": "ORDINAL"
+        },
+        {
+          "name": "activity_type",
+          "type": "ACTIVITY_TYPE"
+        }
+      ]
+    },
+    {
       "intent": "AMAZON.HelpIntent"
     },
     {

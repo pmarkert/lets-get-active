@@ -3,13 +3,13 @@
   "response": {
     "outputSpeech": {
       "type": "SSML",
-      "ssml": "<speak> 1, The Pop Run. 2, LA Life Run. 3, Christmas 2 Give 5k &amp; 1/2 mile Dwarf Dash. 4, One Healthy Community 5K. 5, Homeless For The Holidays 5K Run / Walk. 6, Run4Care 5K/10K. 7, Griffith Luau 5K &amp; Kids 1K Run/Walk. 8, Los Angeles River Half-Marathon &amp; 5K/ 10K. 9, Pasadena Triathlon &amp; 5k. 10, Screenland 5K.  </speak>"
+      "ssml": "<speak> Here are the 3 most popular events. Number 1 is the The Pop Run, on Saturday January 14th, in Pershing Park. 2 is the LA Life Run, on Sunday May 21st, in LA Live. 3 is the Christmas 2 Give 5k &amp; 1/2 mile Dwarf Dash, on Saturday December 17th, in Elysian Park.  </speak>"
     },
     "shouldEndSession": false,
     "reprompt": {
       "outputSpeech": {
         "type": "SSML",
-        "ssml": "<speak> You can say repeat that, say next, previous or goto a specific number, or start over with a new search. </speak>"
+        "ssml": "<speak> You can ask me to repeat that, or give me a specific number, or I can start over with a new search. </speak>"
       }
     }
   },
@@ -121,6 +121,6 @@
     ],
     "start_date": "2016-12-01",
     "total_results": 39,
-    "index": 0
+    "index": 2
   }
 }

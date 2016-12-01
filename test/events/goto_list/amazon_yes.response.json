@@ -3,13 +3,13 @@
   "response": {
     "outputSpeech": {
       "type": "SSML",
-      "ssml": "<speak> 1, Dashing Through The Square 5K Walk/Run. 2, Marietta Mardi Gras 5K, 1K &amp; Tot Trot. 3, Sleighbells on the Square 5k/1k/Tot Trot 2016. 4, Wonderful Days of Winter 5K/1 Mile. 5, Miles 4 Major 5K. 6, Run the Lights of Life 5K/1K Presented by Life University. 7, Chasing Moonlight / Racing Sunlight, the 5K in Paradise!. 8, The Locomotive Half Marathon / 5K (Presented by First Watch). 9, Be the Change 5k. 10, Spring Bloom 5k.  </speak>"
+      "ssml": "<speak> Here are the 3 most popular events. Number 1 is the Dashing Through The Square 5K Walk/Run, on Friday December 2nd, in Marietta Square. 2 is the Marietta Mardi Gras 5K, 1K &amp; Tot Trot, on Friday February 10th, in Glover Park - Marietta Square. 3 is the Sleighbells on the Square 5k/1k/Tot Trot 2016, on Friday December 9th, in Downtown Marietta Square.  </speak>"
     },
     "shouldEndSession": false,
     "reprompt": {
       "outputSpeech": {
         "type": "SSML",
-        "ssml": "<speak> You can say repeat that, say next, previous or goto a specific number, or start over with a new search. </speak>"
+        "ssml": "<speak> You can ask me to repeat that, or give me a specific number, or I can start over with a new search. </speak>"
       }
     }
   },
@@ -101,6 +101,6 @@
     ],
     "start_date": "2016-11-29",
     "total_results": 21,
-    "index": 0
+    "index": 2
   }
 }

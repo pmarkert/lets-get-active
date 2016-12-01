@@ -28,7 +28,7 @@ exports.handler = (event, context) => {
 			if(process.env.DYANMO_TABLE) {
 				this.emit(':saveState', true); // Be sure to call :saveState to persist your session attributes in DynamoDB
 			}
-			this.emit(':tell', "No problem. Remember, an active lifestyle keeps you both happy and healthy!");
+			this.emit(':tell', "No problem, remember that an active lifestyle keeps you happy and healthy!");
 		},
 		"Unhandled": function() {
 			if(this.event.request.intent) {
