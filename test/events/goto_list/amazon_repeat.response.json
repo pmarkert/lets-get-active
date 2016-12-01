@@ -3,7 +3,7 @@
   "response": {
     "outputSpeech": {
       "type": "SSML",
-      "ssml": "<speak> OK, I found 21 events within 20 miles of Las Vegas Nevada starting Monday November 28th or later. Would you like to hear about them? </speak>"
+      "ssml": "<speak> OK, I found 22 events within 20 miles of Las Vegas Nevada starting Monday November 28th or later. Would you like to hear about them? </speak>"
     },
     "shouldEndSession": false
   },
@@ -13,14 +13,37 @@
     "STATE": "_goto_list",
     "results": [
       {
-        "name": "The Color Run Las Vegas 2/25/17",
-        "location": "Downtown Las Vegas",
+        "name": "Run 4 Those Who Can't 5K Run and Family Walk",
+        "location": "Kellogg Zaher Park",
         "date": {
-          "value": "2017-02-24",
-          "readable": "Friday February 24th"
+          "value": "2016-12-03",
+          "readable": "Saturday December 3rd"
         },
-        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/the-color-run-las-vegas-2-25-17-2017?cmp=39-35-ephisys",
-        "logo": "http://photos-images.active.com/file/3/1/original/2a25ba45-17d8-4c57-a44c-444bfdceffb2.jpg"
+        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/run-4-those-who-can-t-5k-run-and-family-walk-2016?cmp=39-35-ephisys",
+        "logo": "http://www.active.com/images/events/hotrace.gif",
+        "smart_score": 892.5409999999999
+      },
+      {
+        "name": "Jingle Bell Run",
+        "location": "Pecos Legacy Park",
+        "date": {
+          "value": "2016-12-17",
+          "readable": "Saturday December 17th"
+        },
+        "register": "http://www.active.com/henderson-nv/running/distance-running-races/jingle-bell-run-2016?cmp=39-35-ephisys",
+        "logo": "http://photos-images.active.com/file/3/1/original/b7e4824f-5a80-44f5-82fb-3cc9bbf2e442.jpg",
+        "smart_score": 827.3716000000001
+      },
+      {
+        "name": "LVTC Holiday Half-Marathon & 5K",
+        "location": "Mountain Lake Park",
+        "date": {
+          "value": "2016-12-17",
+          "readable": "Saturday December 17th"
+        },
+        "register": "http://www.active.com/henderson-nv/running/distance-running-races/lvtc-holiday-half-marathon-and-5k-2016?cmp=39-35-ephisys",
+        "logo": "http://photos-images.active.com/file/3/1/original/4976e7ca-e168-4d9d-8279-141b07e204a0.png",
+        "smart_score": 601.7248000000001
       },
       {
         "name": "Biggest Loser Race Series - Las Vegas, NV",
@@ -30,27 +53,19 @@
           "readable": "Saturday January 28th"
         },
         "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/biggest-loser-race-series-las-vegas-nv-2017?cmp=39-35-ephisys",
-        "logo": "http://photos-images.active.com/file/3/1/original/9816bcb5-0869-4de3-a436-684fe1d70963.jpg"
+        "logo": "http://photos-images.active.com/file/3/1/original/9816bcb5-0869-4de3-a436-684fe1d70963.jpg",
+        "smart_score": 556.7768
       },
       {
-        "name": "Strip on the Strip 5k",
-        "location": "The Las Vegas Strip / Circus Circus Hotel, Casino & Theme Park",
+        "name": "Resolution Run",
+        "location": "Kellogg Zaher Park",
         "date": {
-          "value": "2017-03-04",
-          "readable": "Saturday March 4th"
+          "value": "2016-12-31",
+          "readable": "Saturday December 31st"
         },
-        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/strip-on-the-strip-5k-2017?cmp=39-35-ephisys",
-        "logo": "https://photos-images.active.com/file/3/1/original/fdf96623-2d1d-417c-b325-f7f87e831279.jpg"
-      },
-      {
-        "name": "Run Away With Cirque du Soleil at the Springs Preserve 5K Run & 1-Mile Fun Walk 2017",
-        "location": "Springs Preserve",
-        "date": {
-          "value": "2017-03-11",
-          "readable": "Saturday March 11th"
-        },
-        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/run-away-with-cirque-du-soleil-at-the-springs-preserve-5k-run-and-1-mile-fun-walk-2017?cmp=39-35-ephisys",
-        "logo": "http://photos-images.active.com/file/3/1/original/960a4312-dace-43ca-aa08-ceb587a7c4cb.jpg"
+        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/resolution-run-2016?cmp=39-35-ephisys",
+        "logo": "https://photos-images.active.com/file/3/1/original/2c46d220-b6a2-44d7-8d71-5bb2a21f7c25.jpg",
+        "smart_score": 411.4372
       },
       {
         "name": "HHR Las Vegas",
@@ -60,7 +75,30 @@
           "readable": "Saturday January 28th"
         },
         "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/hhr-las-vegas-2017?cmp=39-35-ephisys",
-        "logo": "http://www.active.com/images/events/hotrace.gif"
+        "logo": "http://www.active.com/images/events/hotrace.gif",
+        "smart_score": 377.55679999999995
+      },
+      {
+        "name": "Las Vegas Ultimate Wine Run Jan 28th",
+        "location": "Cornerstone Park",
+        "date": {
+          "value": "2017-01-28",
+          "readable": "Saturday January 28th"
+        },
+        "register": "http://www.active.com/henderson-nv/running/distance-running-races/las-vegas-ultimate-wine-run-jan-28th-2017?cmp=39-35-ephisys",
+        "logo": "http://www.active.com/images/events/hotrace.gif",
+        "smart_score": 359.03739999999993
+      },
+      {
+        "name": "The Color Run Las Vegas 2/25/17",
+        "location": "Downtown Las Vegas",
+        "date": {
+          "value": "2017-02-24",
+          "readable": "Friday February 24th"
+        },
+        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/the-color-run-las-vegas-2-25-17-2017?cmp=39-35-ephisys",
+        "logo": "http://photos-images.active.com/file/3/1/original/2a25ba45-17d8-4c57-a44c-444bfdceffb2.jpg",
+        "smart_score": 228.0448
       },
       {
         "name": "The Super Run 5K- Las Vegas, NV 2017",
@@ -70,27 +108,63 @@
           "readable": "Friday February 3rd"
         },
         "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/the-super-run-5k-las-vegas-nv-2017?cmp=39-35-ephisys",
-        "logo": "http://photos-images.active.com/file/3/1/original/4bb919ab-c353-42c5-bdd3-89fb20ef6c4e.jpg"
+        "logo": "http://photos-images.active.com/file/3/1/original/4bb919ab-c353-42c5-bdd3-89fb20ef6c4e.jpg",
+        "smart_score": 227.02460000000002
       },
       {
-        "name": "5KColorBlast Color Run - Las Vegas, NV",
-        "location": "Las Vegas - Sunset Park",
+        "name": "Strip on the Strip 5k",
+        "location": "The Las Vegas Strip / Circus Circus Hotel, Casino & Theme Park",
         "date": {
-          "value": "2017-03-24",
-          "readable": "Friday March 24th"
+          "value": "2017-03-04",
+          "readable": "Saturday March 4th"
         },
-        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/5kcolorblast-color-run-las-vegas-nv-2017?cmp=39-35-ephisys",
-        "logo": "https://photos-images.active.com/file/3/1/original/ffc3d027-3e4a-4123-bb6a-ca8153fab95e.jpg"
+        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/strip-on-the-strip-5k-2017?cmp=39-35-ephisys",
+        "logo": "https://photos-images.active.com/file/3/1/original/fdf96623-2d1d-417c-b325-f7f87e831279.jpg",
+        "smart_score": 184.29920000000004
       },
       {
-        "name": "2017 CBRE Cares Catch the Leprechaun 5K",
+        "name": "Trail Trashed",
+        "location": "Hidden Falls Trailhead",
+        "date": {
+          "value": "2017-03-04",
+          "readable": "Saturday March 4th"
+        },
+        "register": "http://www.active.com/henderson-nv/running/distance-running-races/trail-trashed-2017?cmp=39-35-ephisys",
+        "logo": "http://www.active.com/images/events/hotrace.gif",
+        "smart_score": 140.33120000000002
+      },
+      {
+        "name": "Be Brave 5K",
+        "location": "Floyd Lamb State Park",
+        "date": {
+          "value": "2017-01-14",
+          "readable": "Saturday January 14th"
+        },
+        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/be-brave-5k-2017?cmp=39-35-ephisys",
+        "logo": "https://photos-images.active.com/file/3/1/original/d9bd3375-8aa8-4e06-89ea-fda2a6b556b6.png",
+        "smart_score": 137.95999999999998
+      },
+      {
+        "name": "Vegas Cares About Rare 5K Run / 1M Walk",
+        "location": "Kellogg Zaher Sports Complex",
+        "date": {
+          "value": "2017-02-25",
+          "readable": "Saturday February 25th"
+        },
+        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/vegas-cares-about-rare-5k-run-1m-walk-2017?cmp=39-35-ephisys",
+        "logo": "http://photos-images.active.com/file/3/1/original/ad20c985-2513-41b2-a13a-da33ffc90ceb.jpg",
+        "smart_score": 134.5076
+      },
+      {
+        "name": "Revolution Run",
         "location": "Kellogg Zaher Park",
         "date": {
-          "value": "2017-04-01",
-          "readable": "Saturday April 1st"
+          "value": "2017-01-01",
+          "readable": "Sunday January 1st"
         },
-        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/cbre-cares-catch-the-leprechaun-5k-2017?cmp=39-35-ephisys",
-        "logo": "http://photos-images.active.com/file/3/1/original/0fc40557-03c4-4aa7-8b33-e5a98a99de1c.jpg"
+        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/revolution-run-2017?cmp=39-35-ephisys",
+        "logo": "http://www.active.com/images/events/hotrace.gif",
+        "smart_score": 127.1984
       },
       {
         "name": "Brady Heart Foundation 5k and 1mile walk",
@@ -100,20 +174,88 @@
           "readable": "Friday February 10th"
         },
         "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/brady-heart-foundation-5k-and-1mile-walk-2017?cmp=39-35-ephisys",
-        "logo": "http://www.active.com/images/events/hotrace.gif"
+        "logo": "http://www.active.com/images/events/hotrace.gif",
+        "smart_score": 118.17960000000001
       },
       {
-        "name": "Run 4 Those Who Can't 5K Run and Family Walk",
+        "name": "Run Away With Cirque du Soleil at the Springs Preserve 5K Run & 1-Mile Fun Walk 2017",
+        "location": "Springs Preserve",
+        "date": {
+          "value": "2017-03-11",
+          "readable": "Saturday March 11th"
+        },
+        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/run-away-with-cirque-du-soleil-at-the-springs-preserve-5k-run-and-1-mile-fun-walk-2017?cmp=39-35-ephisys",
+        "logo": "http://photos-images.active.com/file/3/1/original/960a4312-dace-43ca-aa08-ceb587a7c4cb.jpg",
+        "smart_score": 115.91240000000002
+      },
+      {
+        "name": "Las Vegas Margarita Madness 5k Run",
+        "location": "Cornerstone Park",
+        "date": {
+          "value": "2017-03-25",
+          "readable": "Saturday March 25th"
+        },
+        "register": "http://www.active.com/henderson-nv/running/distance-running-races/las-vegas-margarita-madness-5k-run-2017?cmp=39-35-ephisys",
+        "logo": "http://www.active.com/images/events/hotrace.gif",
+        "smart_score": 111.622
+      },
+      {
+        "name": "Chick-fil-A Connect 5K - Henderson, NV",
+        "location": "Whitney Mesa",
+        "date": {
+          "value": "2017-01-20",
+          "readable": "Friday January 20th"
+        },
+        "register": "http://www.active.com/henderson-nv/running/distance-running-races/chick-fil-a-connect-5k-henderson-nv-2017?cmp=39-35-ephisys",
+        "logo": "http://www.active.com/images/events/hotrace.gif",
+        "smart_score": 53.9666
+      },
+      {
+        "name": "2017 CBRE Cares Catch the Leprechaun 5K",
         "location": "Kellogg Zaher Park",
         "date": {
-          "value": "2016-12-03",
-          "readable": "Saturday December 3rd"
+          "value": "2017-04-01",
+          "readable": "Saturday April 1st"
         },
-        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/run-4-those-who-can-t-5k-run-and-family-walk-2016?cmp=39-35-ephisys",
-        "logo": "http://www.active.com/images/events/hotrace.gif"
+        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/cbre-cares-catch-the-leprechaun-5k-2017?cmp=39-35-ephisys",
+        "logo": "http://photos-images.active.com/file/3/1/original/0fc40557-03c4-4aa7-8b33-e5a98a99de1c.jpg",
+        "smart_score": 53.935199999999995
+      },
+      {
+        "name": "5KColorBlast Color Run - Las Vegas, NV",
+        "location": "Las Vegas - Sunset Park",
+        "date": {
+          "value": "2017-03-24",
+          "readable": "Friday March 24th"
+        },
+        "register": "http://www.active.com/las-vegas-nv/running/distance-running-races/5kcolorblast-color-run-las-vegas-nv-2017?cmp=39-35-ephisys",
+        "logo": "https://photos-images.active.com/file/3/1/original/ffc3d027-3e4a-4123-bb6a-ca8153fab95e.jpg",
+        "smart_score": 9.610400000000002
+      },
+      {
+        "name": "ColorMy5K Color Run - Las Vegas, NV",
+        "location": "Las Vegas - Craig Ranch Regional Park",
+        "date": {
+          "value": "2017-04-28",
+          "readable": "Friday April 28th"
+        },
+        "register": "http://www.active.com/north-las-vegas-nv/running/distance-running-races/colormy5k-color-run-las-vegas-nv-2017?cmp=39-35-ephisys",
+        "logo": "https://photos-images.active.com/file/3/1/original/4c379585-4325-4b2c-8c65-9f12e6dfb45e.jpg",
+        "smart_score": 0.0033999999999999586
+      },
+      {
+        "name": "Flight of Fire",
+        "location": "Red Rock Canyon Visitor Center",
+        "date": {
+          "value": "2017-05-06",
+          "readable": "Saturday May 6th"
+        },
+        "register": "http://www.active.com/las-vegas-nv/running/trail-run-races/flight-of-fire-2017?cmp=39-35-ephisys",
+        "logo": "https://photos-images.active.com/file/3/1/original/c8eadd86-f0a0-4449-b3ff-ed610245004e.png",
+        "smart_score": -9.731799999999978
       }
     ],
     "start_date": "2016-11-28",
-    "total_results": 21
+    "total_results": 22
   }
 }

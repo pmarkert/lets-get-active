@@ -3,12 +3,12 @@
   "response": {
     "outputSpeech": {
       "type": "SSML",
-      "ssml": "<speak> I&apos;m sorry but I didn&apos;t find any results within 20 miles of cancel, starting Monday November 28th or later. When else, or where else would you like me to search? </speak>"
+      "ssml": "<speak> I&apos;m sorry but I didn&apos;t find any results within 25 miles of cancel, starting Monday November 28th or later. When else, or where else would you like me to search? </speak>"
     },
     "shouldEndSession": false
   },
   "sessionAttributes": {
     "STATE": "_search",
-    "distance": "20"
+    "distance": "25"
   }
 }

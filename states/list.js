@@ -12,16 +12,28 @@ module.exports = {
 	'ItemSummary': function() {
 		const race = this.attributes.results[this.attributes.index];
 		const output = `Event number ${this.attributes.index+1} is, the ${race.name}, on ${race.date.readable}, located at ${race.location}`;
-		// TODO - generate the bitly link, download logo to s3
 		log(`ItemSummary - ${output}`);
 		this.emit(':ask', xmlescape(output), "You can say repeat that, more information, next, previous, goto a specific number, or start over");
 	},
 	'ItemDetail': function() {
+		if(this.event.request.intent && this.event.request.intent.slots && this.event.request.intent.slots.index) {
+			const index = parseInt(this.event.request.intent.slots.index.value);
+			if(index <= this.attributes.total_results && index >= 1) {
+				if(index >= this.attributes.results.length) {
+					return this.emit(":ask", "I'm sorry, I currently only have access to the first " + this.attributes.results.length.toString() + " results.");
+				} 
+				else {
+					this.attributes.index = index - 1;
+				}
+			}
+			else {
+				return this.emit(":ask", "I'm sorry, that number is either too high or too low.");
+			}
+		}
 		const race = this.attributes.results[this.attributes.index];
 		const output = `${race.name} is on ${race.date.readable} at ${race.location}`;
 		const extension = race.logo.substring(race.logo.lastIndexOf("."));
 		log("About to shorten - " + race.register);
-debugger;
 		bitly.shorten(race.register).then((response) => {
 			log("Bitly response - " + JSON.stringify(response, null, 2));
 			const short_link = response.data.url;
@@ -79,7 +91,7 @@ debugger;
 		const index = parseInt(this.event.request.intent.slots.index.value);
 		if(index <= this.attributes.total_results && index >= 1) {
 			if(index >= this.attributes.results.length) {
-				this.emit(":ask", "I'm sorry, I currently only have access to the first 10 results.");
+				this.emit(":ask", "I'm sorry, I currently only have access to the first " + this.attributes.results.length.toString() + " results.");
 			} 
 			else {
 				this.attributes.index = index - 1;
@@ -100,7 +112,7 @@ debugger;
 		}
 		else {
 			if(this.attributes.index < this.attributes.total_results - 1) {
-				this.emit(":ask", "I'm sorry, I currently only have access to the first 10 results.");
+				this.emit(":ask", "I'm sorry, I currently only have access to the first " + this.attributes.results.length.toString() + " results.");
 			}
 			else {
 				this.emit(":ask", "There are no more results right now.");

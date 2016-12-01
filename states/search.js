@@ -3,8 +3,13 @@ const request = global.TEST_MODE ? require("../test/rp_mock") : require("request
 const states = require("../states");
 const log = require("../log")(__filename);
 const xmlescape = require("xml-escape");
+const _ = require("lodash");
 
-function transform_results(result) {
+function smart_score(race, race_date, search_date) {
+	return race.assetPopularity.A3Rank * (1 - 0.0066*race_date.diff(search_date, "days"));
+}
+
+function transform_results(result, search_date) {
 	const results = [];
 	for (var i=0; i<result.results.length; i++) {
 		var race = result.results[i];
@@ -14,10 +19,11 @@ function transform_results(result) {
 			location : race.place.placeName, 
 			date : { value: race_date.format("YYYY-MM-DD"), readable: race_date.format("dddd MMMM Do") },
 			register: race.urlAdr,
-			logo: race.logoUrlAdr
+			logo: race.logoUrlAdr,
+			smart_score: smart_score(race, race_date, search_date)
 		});
 	}
-	return results;
+	return _.orderBy(results, "smart_score", [ "desc" ]);
 }
 
 module.exports = {
@@ -40,9 +46,9 @@ module.exports = {
 
 		const location_formatted = encodeURIComponent(this.attributes.location);
 		const start_date = moment(this.attributes.start_date, "YYYY-MM-DD"); 
-		this.attributes.distance = this.attributes.distance || "20";
+		this.attributes.distance = this.attributes.distance || "25"; // TODO - option to expand radius if no results matched
 
-		const url = `http://api.amp.active.com/v2/search/?near=${location_formatted}&radius=${this.attributes.distance}&current_page=1&per_page=10&sort=distance&exclude_children=true&topic=Running&start_date=${this.attributes.start_date}..&api_key=${ACTIVE_API_KEY}`
+		const url = `http://api.amp.active.com/v2/search/?near=${location_formatted}&radius=${this.attributes.distance}&current_page=1&per_page=30&sort=date_asc&exclude_children=true&topic=Running&start_date=${this.attributes.start_date}..&api_key=${ACTIVE_API_KEY}`
 		log(`Making API call to Active.com - ${url}`);
 		request.get({ url: url, json: true })
 			.then((result) => {
@@ -57,7 +63,7 @@ module.exports = {
 				}
 				else {
 					this.handler.state = states.GOTO_LIST;
-					this.attributes.results = transform_results(result);
+					this.attributes.results = transform_results(result, start_date);
 					this.attributes.total_results = result.total_results;
 					this.emit(":ask", xmlescape(`OK, I found ${total_results} events within ${this.attributes.distance} miles of ${this.attributes.location} starting ${start_date.format("dddd MMMM Do")} or later. Would you like to hear about them?`));
 				}

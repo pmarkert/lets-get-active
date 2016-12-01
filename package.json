@@ -12,6 +12,7 @@
   "dependencies": {
     "alexa-sdk": "pmarkert/alexa-skills-kit-sdk-for-nodejs",
     "bitly": "^4.1.1",
+    "lodash": "^4.17.2",
     "moment": "^2.17.0",
     "request-promise": "^4.1.1",
     "xml-escape": "^1.1.0"
@@ -27,6 +28,7 @@
   },
   "bundledDependencies": [
     "alexa-sdk",
+    "lodash",
     "moment",
     "request-promise"
   ]

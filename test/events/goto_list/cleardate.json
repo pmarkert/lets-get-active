@@ -5,7 +5,7 @@
 	"applicationId": "amzn1.ask.skill.9200600c-ea41-4400-adbe-beb6efef00b1"
       },
   	"attributes": {
-	    "distance": "20",
+	    "distance": "25",
 	    "location": "Marietta ga",
 	    "STATE": "_goto_list",
 	    "results": [
