@@ -1,0 +1,41 @@
+# https://www.websequencediagrams.com/
+title Let's Get Active - Return visit
+
+User->Alexa: LaunchIntent
+note left of Alexa: 
+State: SEARCH
+end note
+Alexa->DynamoDB: Retrieve user attributes
+DynamoDB->Alexa: location, search_radius, etc.
+Alexa->Active.com API: Search in ${location} for today
+Active.com API->Alexa: Results sorted by date
+Alexa->Alexa:
+note right of Alexa:
+Intelligent ranking 
+algorithm sorts results
+end note
+note left of Alexa: 
+State: GOTO_LIST  
+end note
+Alexa->User: Repeat the location and tell the number of results. Prompt to hear summary.
+User->Alexa: AMAZON.YesIntent
+note left of Alexa: 
+State: LIST_SUMMARY  
+end note
+Alexa->User: Summarize top 3 and prompt user to ask for details, navigate to another item, or start over.
+User->Alexa: GotoNumber(index=4)
+note left of Alexa: 
+State: LIST
+end note
+User->Alexa: ItemDetails(index=2)
+Alexa->Bitly: Shorten registration URL
+Bitly->Alexa: Short URL
+Alexa->Internet: Download image if displayable
+Internet->Alexa: Image contents
+Alexa->S3: Store image and set ACL(public-read)
+S3->Alexa: Confirmation
+Alexa->User: Sends card with image and registration link
+User->Alexa: AMAZON.StopIntent
+Alexa->DynamoDB: Store filtered user attributes
+DynamoDB->Alexa: Confirmation
+Alexa->User: Goodbye.

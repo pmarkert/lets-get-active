@@ -1,0 +1,65 @@
+# https://www.websequencediagrams.com/
+title Let's Get Active - First usage
+
+User->Alexa: LaunchIntent
+note left of Alexa: 
+State: SEARCH
+end note
+Alexa->User: Welcome Message and prompt for Location.
+User->Alexa: SetLocation(location="Atlanta, GA")
+Alexa->Active.com API: Search in ${location} for today
+Active.com API->Alexa: Results sorted by date
+Alexa->Alexa:
+note right of Alexa:
+Intelligent ranking 
+algorithm sorts results
+end note
+note left of Alexa: 
+State: GOTO_LIST  
+end note
+Alexa->User: Repeat the location and tell the number of results. Prompt to hear summary.
+User->Alexa: AMAZON.NoIntent
+Alexa->User: Prompt user to specify a date or different location
+note left of Alexa: 
+State: Back to SEARCH  
+end note
+User->Alexa: SetDate(start_date="This Saturday")
+note left of Alexa: 
+State: GOTO_LIST  
+end note
+Alexa->User: Repeat the location and tell the number of results. Prompt to hear summary.
+User->Alexa: AMAZON.YesIntent
+note left of Alexa: 
+State: LIST_SUMMARY  
+end note
+Alexa->User: Summarize top 3 and prompt user to ask for details, navigate to another item, or start over.
+User->Alexa: GotoNumber(index=4)
+note left of Alexa: 
+State: LIST
+end note
+Alexa->User: Summary of item #4
+User->Alexa: AMAZON.NextIntent
+Alexa->User: Summary of item #5
+User->Alexa: ItemDetails
+Alexa->Bitly: Shorten registration URL
+Bitly->Alexa: Short URL
+Alexa->Internet: Download image if displayable
+Internet->Alexa: Image contents
+Alexa->S3: Store image and set ACL(public-read)
+S3->Alexa: Confirmation
+Alexa->User: Sends card with image and registration link
+User->Alexa: AMAZON.NextIntent
+Alexa->User: Summary of item #6
+User->Alexa: AMAZON.RepeatIntent
+Alexa->User: Summary of item #6
+User->Alexa: AMAZON.PreviousIntent
+Alexa->User: Summary of item #5
+User->Alexa: AMAZON.StartOverIntent
+note left of Alexa: 
+State: Back to SEARCH  
+end note
+Alexa->User: Prompt for new location or date to search.
+User->Alexa: AMAZON.StopIntent
+Alexa->DynamoDB: Store filtered user attributes
+DynamoDB->Alexa: Confirmation
+Alexa->User: Goodbye.
