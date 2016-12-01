@@ -37,9 +37,13 @@ Sample converation:
     * Fixed defect with missing reprompt text being rendered by Alexa and prompting users with "undefined".
     * Missing documentation in README about DynamoDB Table requirements
     * Other minor documentation edits
-* I developed a helpful unit-testing framework [https://github.com/pmarkert/alexa-skill-tester](https://github.com/pmarkert/alexa-skill-tester) to invoke the skill handler with requests and validate the responses.
+* During the development of this skill, I also developed and published a helpful unit-testing framework [https://github.com/pmarkert/alexa-skill-tester](https://github.com/pmarkert/alexa-skill-tester). The framework uses collection of .json files to invoke the skill handler and then validates the responses against matching .response.json files.
     * Provides unit-test coverage capability to test every available intent against each of the states
     * Supports automatic re-generation of expected response values
-* Uses mock elements to substitute for real API calls to keep unit tests portable, fast, and avoid authentication issues.
+* Used mock elements to substitute for real API calls to keep unit tests portable, fast, and avoid authentication issues.
 
+## alexa-skill-tester
+I wanted a way to easily test my skill and nail down the expected responses. There are a lot of intents, combinations of values for slots, and states that can be managed, so it is difficult/impossible to manually test every possible combination each time a change is made. Additionally, the JSON for the Alexa Skill requests/responses can be rather verbose, so I wanted an easy way to manage the test-cases using standard files. During the development of Alexa Skills, I have found that there are often surprises with the way that Alexa fills in the intents and slots. I wanted an easy way that each time my skill received a request that caused a failure, that I could pull the exact request content from the CloudWatch logs, save it as a new test-case, verify/reproduce the issue locally, and then once repaired, lock in the expected response.
+
+During the development process, I found myself making a lot of small changes to the response text, such as adding/removing punctuation and optimizing the specific words for the spoken audio. The smallest change in the response text causes unit-test failures (by intention), but I wanted an easy way to update the response files. Also, in some cases, it is too time-consuming to type-out what the expected response from a skill interaction should be. In these cases, the alexa-skill-tester that I developed allows a flag to be set as an environment variable. If the flag is set then the test will write-back the response files (if they did not already exist). This makes it easy to do mass update and then let git tell me exactly what changed in the resposnes.
 
