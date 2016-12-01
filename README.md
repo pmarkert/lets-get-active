@@ -1,6 +1,8 @@
-# lets-get-active
+# lets-get-active 
+
 An active lifestyle keeps you both healthy and happy... or so they say ;) Now you can use Alexa on an Amazon echo device to find out information about upcoming races and Active.com events. Try it out! "Alexa, open Let's get active!"
 
+![Powered by Active.com](doc/power-by--drk.png)
 This Alexa Skill prompts you to enter a location and optionally a starting date and it will search for the most popular running races that meet your criteria. Whether you are getting ready to jog your first 5k, you are an avid 10k/half-marathon runner, or you've got a few marathon's under your belt. And for any couch-potatoes out there, there are even some short 1K and 1 mile races. Whatever your motivation, just get out there and get moving! 
 
 Your race awaits you!
