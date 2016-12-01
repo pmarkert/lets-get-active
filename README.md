@@ -79,6 +79,7 @@ I used the "enum-like" module that I created to distinguish the states to dynami
 * chai - assertion framework
 * async - For triggering multiple tests asynchronously
 * aws-lambda-mock-context - A local mock of the lambda context to hook into the handler.
+
 # Step-by-step
 1. I applied for an API key with the Active.com developer network. http://developer.active.com/ They had shutdown new applications to their search API, however after I sent them an email, they were kind enough to provide me with a key. This key is stored as an environment variable in AWS Lambda, encrypted at rest with my KMS keys.
 2. Created a new skill entry in my Alexa developer portal specifying the name of my skill and the invocation name. The description, language, logo, and country availability. This generates a new skill/application Id for the skill. 
