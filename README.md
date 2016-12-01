@@ -64,14 +64,21 @@ I used the alexa-skills-kit-sdk-for-nodejs SDK to do the development of this ski
 ## Dynamic loading of states
 I used the "enum-like" module that I created to distinguish the states to dynamically iterate each state and find/load the corresponding handlers module and load it in automatically. This way, I don't have to remember to go and register each new state.
 
-## How-to
-To create the skill, I used the following packages:
+## Components and libraries used
+To run the skill in production, I used the following packages:
 * alexa-sdk - the router/response framework
 * aws-sdk - for reading/writing the logo images to S3
 * bitly - for shortening the registration urls
 * lodash - for the sorting and some utility methods
 * moment - for date manipulation, parsing, and formatting
 
+For unit-testing, packaging, deployment and running the skill locally, I also used the following packages:
+* alexa-skill-tester - The package I created to do the unit testing (originally this was in the project and it got refactored out after some of the other developers expressed an interest in the technique).
+* grunt and grunt-aws-lambda - Packaging and deployment
+* mocha - unit testing framework
+* chai - assertion framework
+* async - For triggering multiple tests asynchronously
+* aws-lambda-mock-context - A local mock of the lambda context to hook into the handler.
 # Step-by-step
 1. I applied for an API key with the Active.com developer network. http://developer.active.com/ They had shutdown new applications to their search API, however after I sent them an email, they were kind enough to provide me with a key. This key is stored as an environment variable in AWS Lambda, encrypted at rest with my KMS keys.
 2. Created a new skill entry in my Alexa developer portal specifying the name of my skill and the invocation name. The description, language, logo, and country availability. This generates a new skill/application Id for the skill. 
